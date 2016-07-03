@@ -1,0 +1,65 @@
+- var site_title = "Qrac GitHub";
+- var page_title = "Shitaji.CSS";
+- var page_description = "Webデザイン・Web開発を効率化するためのリセットCSS";
+- var page_url = "https://qrac.github.io/shitajicss/";
+- var github_url = "https://github.com/qrac/shitajicss/";
+- var twitter_id = "Qrac_jp";
+
+doctype html
+html(lang="ja")
+  head
+    //- Encording
+    meta(charset='UTF-8')
+    //- Site Meta
+    title #{page_title} - #{site_title}
+    meta(name="description" content="#{page_description}")
+    meta(name='keywords', content='#{page_keywords}')
+    //- Viewport
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui")
+    //-meta(name="viewport" content="width=1024")
+    //- Facebook OGP
+    meta(property="og:title" content="#{page_title}")
+    meta(property="og:description" content="#{page_description}")
+    meta(property="og:url" content="#{page_url}")
+    meta(property="og:image" content="#{page_url}demo/ogp.png")
+    meta(property="og:site_name" content="#{site_title}")
+    meta(property="og:type" content="website")
+    //- Twitter Card
+    meta(name='twitter:card', content='summary_large_image')
+    meta(name='twitter:site', content='#{twitter_id}')
+    meta(name='twitter:creator', content='#{twitter_id}')
+    meta(name='twitter:title', content='#{page_title}')
+    meta(name='twitter:description', content='#{page_description}')
+    meta(name='twitter:image:src', content='#{page_url}demo/ogp.png')
+    //- Icon
+    link(rel="apple-touch-icon" href="demo/apple-touch-icon.png")
+    link(rel="shortcut icon" href="demo/favicon.ico")
+    //- Path to Library CSS
+    //-link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster")
+    //-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
+    //-link(rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp.css")
+    //-link(rel="stylesheet" href="https://cdn.rawgit.com/qrac/yakuhanjp/master/dist/css/yakuhanjp_s.css")
+    //- Path to Custom CSS
+    link(rel="stylesheet" href="demo/style.css")
+  body
+    include icomoon/symbol-defs.svg
+    header.header
+      svg.-svg.-svg_logo_ShitajiCSS: use(xlink:href="#-svg_logo_ShitajiCSS")
+      h1.-title Shitaji.CSS
+      h2.-disc Optimized "Reset.CSS" for web design.
+      a.-github(href="#{github_url}")
+        svg.-svg.-svg_github: use(xlink:href="#-svg_github")
+        span GitHub
+    main.main
+      section.-section
+        pre.-pre
+          include ../_shitaji.scss
+      section.-section
+        h3.-heading License
+        .-license
+          p
+            | CC0 1.0 Public Domain / Author: 
+            a(href="https://twitter.com/#{twitter_id}" target="_blank") Qrac
+    footer.footer
+      a(href="https://twitter.com/#{twitter_id}" target="_blank"): svg.-svg.-svg_twitter: use(xlink:href="#-svg_twitter")

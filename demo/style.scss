@@ -1,0 +1,129 @@
+/* ===================================================
+*
+*  Title: Shitaji.CSS
+*  Author: Qrac
+*  URL: https://twitter.com/Qrac_jp
+*
+=================================================== */
+
+// Font Size "Rem"
+@mixin rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// Base CSS
+@import "../_shitaji";
+
+/*----------------------------------------------------
+YakuHanJP CSS
+----------------------------------------------------*/
+
+* {
+  font-family:
+  //"YakuHanJP",
+  //Avenir, "Open Sans",
+  Helvetica Neue, Helvetica,
+  //Verdana, Roboto,
+  //"Noto Sans Japanese",
+  "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
+  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+  "Meiryo UI", Meiryo, メイリオ, Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic",
+  arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #ffc8c8;
+  background: linear-gradient(135deg, #ffc8c8 0%, #ffe0cf 100%);
+  color: #847472;
+}
+
+.header {
+  padding: 50px 20px;
+  text-align: center;
+  .-svg_logo_ShitajiCSS {
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    color: #fff;
+  }
+  .-title {
+    @include rem(44);
+    color: #fff;
+    font-family: "Lobster";
+    margin: 0 0 15px;
+  }
+  .-disc {
+    @include rem(14);
+    color: #fff;
+    margin: 0 0 40px;
+  }
+  a.-github {
+    @include rem(15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 36px;
+    color: #847472;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 auto;
+  }
+  a.-github > .-svg_github {
+    width: 24px;
+    height: 24px;
+    fill: #847472;
+    color: #847472;
+    margin: 0 3px 0 0;
+  }
+}
+
+.main {
+  padding: 20px;
+  max-width: 560px;
+  margin: 0 auto;
+  .-section {
+    padding: 0 0 20px;
+  }
+  .-heading {
+    @include rem(30);
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  .-pre {
+    @include rem(18);
+    padding: 20px;
+    line-height: 1.4;
+    background: #fff;
+    border-radius: 3px;
+    margin: 0 0 30px;
+  }
+  .-license {
+    @include rem(14);
+    padding: 20px;
+    line-height: 1.4;
+    background: #fff;
+    border-radius: 3px;
+    a {
+      color: #847472;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer {
+  padding: 20px 20px 80px;
+  text-align: center;
+  a > .-svg_twitter {
+    width: 30px;
+    height: 30px;
+    fill: #847472;
+    color: #847472;
+    margin: 0 auto;
+  }
+}
