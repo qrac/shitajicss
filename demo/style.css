@@ -334,6 +334,7 @@ body {
   background: #fff;
   border-radius: 3px;
   margin: 0 0 30px;
+  overflow-x: scroll;
 }
 
 .main .-license {

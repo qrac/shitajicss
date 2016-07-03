@@ -1,6 +1,6 @@
 # Shitaji.CSS
 
-「Shitaji.CSS」は、Webデザイン・Web開発を効率化するためのリセットCSSです。
+「Shitaji.CSS」は、Webデザイン・Web開発を効率化するためのリセットCSSです。Web制作の下地として使います。
 
 ＞ [Demo Page](https://qrac.github.io/shitajicss/)
 
@@ -8,7 +8,7 @@
 
 デザイナーが考えたWebデザインの再現と、開発者やSEO担当者が行う構造最適化を両立させるため、ブラウザのデフォルトスタイルを極力打ち消し、HTMLとCSSを分離しやすくしています。
 
-また、クロスブラウザのバグフィックスを随時反映（[sanitize.css 4.0](https://github.com/10up/sanitize.css)など）しており、コーディング工数の削減に貢献します。
+また、クロスブラウザのバグフィックスを随時反映（[sanitize.css 4.0](https://github.com/10up/sanitize.css)など）。コーディング工数の削減に貢献します。
 
 ## Feature
 
