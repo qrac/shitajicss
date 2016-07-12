@@ -1,10 +1,10 @@
 /*----------------------------------------------------
   Shitaji.CSS
-  Version: 1.0
+  Version: 1.1
   ---
   Author: Qrac
   Author URL: https://twitter.com/Qrac_jp
-  License: CC0 1.0 Public Domain
+  License: CC0 1.1 Public Domain
   ---
   Caution: 1rem = 10px, html font-size = 62.5%
 ----------------------------------------------------*/
@@ -33,7 +33,6 @@ html {
   font-size: 62.5%;
   font-family: sans-serif;
   box-sizing: border-box;
-  cursor: default;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,9 +49,7 @@ body {
 ::after {
   text-decoration: inherit;
   vertical-align: inherit;
-}
-::selection {
-  text-shadow: none;
+  background-repeat: no-repeat;
 }
 article,
 aside,
@@ -179,7 +176,6 @@ textarea,
   display: inherit;
   position: absolute;
 }
-
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
 }

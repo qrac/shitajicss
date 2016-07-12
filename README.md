@@ -40,7 +40,6 @@ html {
   font-size: 62.5%;
   font-family: sans-serif;
   box-sizing: border-box;
-  cursor: default;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -57,9 +56,7 @@ body {
 ::after {
   text-decoration: inherit;
   vertical-align: inherit;
-}
-::selection {
-  text-shadow: none;
+  background-repeat: no-repeat;
 }
 article,
 aside,
@@ -164,11 +161,9 @@ textarea {
 [aria-busy="true"] {
   cursor: progress;
 }
-
 [aria-controls] {
   cursor: pointer;
 }
-
 [aria-disabled] {
   cursor: default;
 }
@@ -188,7 +183,6 @@ textarea,
   display: inherit;
   position: absolute;
 }
-
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
 }
