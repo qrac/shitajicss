@@ -6,16 +6,6 @@
 *  URL: https://twitter.com/Qrac_jp
 *
 =================================================== */
-/*----------------------------------------------------
-  Shitaji.CSS
-  Version: 1.1
-  ---
-  Author: Qrac
-  Author URL: https://twitter.com/Qrac_jp
-  License: CC0 1.1 Public Domain
-  ---
-  Caution: 1rem = 10px, html font-size = 62.5%
-----------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +27,14 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
+}
+
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -53,13 +51,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-  background-repeat: no-repeat;
 }
 
 article,
