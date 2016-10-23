@@ -36,6 +36,13 @@
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
+}
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -51,12 +58,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-  background-repeat: no-repeat;
 }
 article,
 aside,
