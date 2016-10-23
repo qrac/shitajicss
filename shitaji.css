@@ -1,13 +1,3 @@
-/*----------------------------------------------------
-  Shitaji.CSS
-  Version: 1.0
-  ---
-  Author: Qrac
-  Author URL: https://twitter.com/Qrac_jp
-  License: CC0 1.0 Public Domain
-  ---
-  Caution: 1rem = 10px, html font-size = 62.5%
-----------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -29,11 +19,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background-repeat: no-repeat;
+}
+
 html {
   font-size: 62.5%;
   font-family: sans-serif;
   box-sizing: border-box;
-  cursor: default;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -46,20 +43,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-
-::-moz-selection {
-  text-shadow: none;
-}
-
-::selection {
-  text-shadow: none;
 }
 
 article,
