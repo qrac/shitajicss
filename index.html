@@ -54,18 +54,19 @@
     </header>
     <main class="main">
       <section class="-section">
-        <pre class="-pre">//----------------------------------------------------
-//  Title: Shitaji.CSS
-//  Version: 1.2.0
-//  License: CC0 1.0 Public Domain
-//  GitHub: https://github.com/qrac/shitajicss
-//  ---
-//  Author: Qrac
-//  Author WebSite: https://qrac.jp
-//  Author Contact: https://twitter.com/Qrac_jp
-//  ---
-//  Caution: 1rem = 10px, html font-size = 62.5%
-//----------------------------------------------------
+        <pre class="-pre">/*
+ *  Title: Shitaji.CSS
+ *  Version: 1.2.0
+ *  Type: Reset CSS
+ *  License: CC0 1.0 Public Domain
+ *  GitHub: https://github.com/qrac/shitajicss
+ *  ---
+ *  Author: Qrac
+ *  Author WebSite: https://qrac.jp
+ *  Author Contact: https://twitter.com/Qrac_jp
+ *  ---
+ *  Caution: 1rem = 10px, html font-size = 62.5%
+ */
 
 * {
   margin: 0;
@@ -87,6 +88,7 @@
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
+
 *::before,
 *::after {
   box-sizing: inherit;
@@ -94,6 +96,7 @@
   vertical-align: inherit;
   background-repeat: no-repeat;
 }
+
 html {
   font-size: 62.5%;
   font-family: sans-serif;
@@ -102,6 +105,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   font-size: 10px;
   font-size: 1rem;
@@ -110,6 +114,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 article,
 aside,
 details,
@@ -124,32 +129,39 @@ section,
 summary {
   display: block;
 }
+
 audio,
 canvas,
 progress,
 video {
   display: inline-block;
 }
+
 audio:not([controls]) {
   display: none;
   height: 0;
 }
+
 template,
 [hidden] {
   display: none;
 }
+
 hr {
   height: 0;
   overflow: visible;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 abbr[title] {
   border-bottom: 1px dotted;
   text-decoration: none;
 }
+
 audio,
 canvas,
 iframe,
@@ -158,67 +170,85 @@ svg,
 video {
   vertical-align: middle;
 }
+
 svg {
   fill: currentColor;
 }
+
 svg:not(:root) {
   overflow: hidden;
 }
+
 a {
   -webkit-text-decoration-skip: objects;
 }
+
 button,
 input {
   overflow: visible;
 }
+
 button,
 select {
   text-transform: none;
 }
+
 button,
 html [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
+
 ::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
+
 :-moz-focusring {
   outline: 1px dotted ButtonText;
 }
+
 textarea {
   overflow: auto;
   resize: vertical;
 }
+
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
 }
+
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+
 ::-webkit-search-cancel-button,
 ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 ::-webkit-input-placeholder {
   color: inherit;
 }
+
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
 }
+
 [aria-busy="true"] {
   cursor: progress;
 }
+
 [aria-controls] {
   cursor: pointer;
 }
+
 [aria-disabled] {
   cursor: default;
 }
+
 a,
 area,
 button,
@@ -230,18 +260,22 @@ textarea,
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
+
 [hidden][aria-hidden="false"] {
   clip: rect(0, 0, 0, 0);
   display: inherit;
   position: absolute;
 }
+
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,

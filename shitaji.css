@@ -1,3 +1,16 @@
+/*
+ *  Title: Shitaji.CSS
+ *  Version: 1.2.0
+ *  Type: Reset CSS
+ *  License: CC0 1.0 Public Domain
+ *  GitHub: https://github.com/qrac/shitajicss
+ *  ---
+ *  Author: Qrac
+ *  Author WebSite: https://qrac.jp
+ *  Author Contact: https://twitter.com/Qrac_jp
+ *  ---
+ *  Caution: 1rem = 10px, html font-size = 62.5%
+ */
 * {
   margin: 0;
   padding: 0;
