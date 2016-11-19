@@ -21,19 +21,9 @@ YakuHanJP CSS
 
 * {
   font-family:
-  //"YakuHanJP",
-  //Avenir, "Open Sans",
   Helvetica Neue, Helvetica,
-  //Verdana, Roboto,
-  //"Noto Sans Japanese",
-  "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic",
-  "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
-  "Meiryo UI", Meiryo, メイリオ, Osaka,
-  "ＭＳ Ｐゴシック", "MS PGothic",
+  "Hiragino Kaku Gothic ProN", Meiryo,
   arial, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -52,18 +42,18 @@ body {
     color: #fff;
   }
   .-title {
-    @include rem(44);
+    font-size: 2.75em;
     color: #fff;
     font-family: "Lobster";
     margin: 0 0 15px;
   }
   .-disc {
-    @include rem(14);
+    font-size: 0.875em;
     color: #fff;
     margin: 0 0 40px;
   }
   a.-github {
-    @include rem(15);
+    font-size: 0.9375em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,12 +81,12 @@ body {
     padding: 0 0 20px;
   }
   .-heading {
-    @include rem(30);
+    font-size: 1.875em;
     text-align: center;
     margin: 0 0 30px;
   }
   .-pre {
-    @include rem(18);
+    font-size: 1.125em;
     padding: 20px;
     line-height: 1.4;
     background: #fff;
@@ -105,7 +95,7 @@ body {
     overflow-x: scroll;
   }
   .-license {
-    @include rem(14);
+    font-size: 0.875em;
     padding: 20px;
     line-height: 1.4;
     background: #fff;
