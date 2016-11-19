@@ -1,6 +1,6 @@
 /*
  *  Title: Shitaji.CSS
- *  Version: 1.3.0
+ *  Version: 2.0.0
  *  Type: Reset CSS
  *  License: CC0 1.0 Public Domain
  *  GitHub: https://github.com/qrac/shitajicss
@@ -8,8 +8,6 @@
  *  Author: Qrac
  *  Author WebSite: https://qrac.jp
  *  Author Contact: https://twitter.com/Qrac_jp
- *  ---
- *  Caution: 1rem = 10px, html font-size = 62.5%
  */
 * {
   margin: 0;
@@ -40,7 +38,6 @@
 }
 
 html {
-  font-size: 62.5%;
   font-family: sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
@@ -49,9 +46,6 @@ html {
 }
 
 body {
-  font-size: 10px;
-  font-size: 1rem;
-  line-height: 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

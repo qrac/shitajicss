@@ -13,7 +13,7 @@
 ## Feature
 
 - SCSS（mixin）を使ったrem+px対応を想定
-- 1rem = 10px（ html {font-size: 62.5%} ）
+- ~~1rem = 10px（ html {font-size: 62.5%} ）~~
 
 ## License
 
