@@ -6,12 +6,6 @@
 *
 =================================================== */
 
-// Font Size "Rem"
-@mixin rem($size) {
-  font-size: $size + px;
-  font-size: ($size / 10) + rem;
-}
-
 // Base CSS
 @import "../_shitaji";
 
@@ -86,7 +80,7 @@ body {
     margin: 0 0 30px;
   }
   .-pre {
-    font-size: 1.125em;
+    font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, serif;
     padding: 20px;
     line-height: 1.4;
     background: #fff;
