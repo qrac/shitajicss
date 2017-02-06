@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Shitaji.CSS - Qrac GitHub</title>
     <meta name="description" content="Webデザイン・Web開発を効率化するためのリセットCSS">
-    <meta name="keywords" content="undefined">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta property="og:title" content="Shitaji.CSS">
     <meta property="og:description" content="Webデザイン・Web開発を効率化するためのリセットCSS">
     <meta property="og:url" content="https://qrac.github.io/shitajicss/">
-    <meta property="og:image" content="https://qrac.github.io/shitajicss/demo/ogp.png">
+    <meta property="og:image" content="https://qrac.github.io/shitajicss/img/ogp.png">
     <meta property="og:site_name" content="Qrac GitHub">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -17,11 +18,12 @@
     <meta name="twitter:creator" content="Qrac_jp">
     <meta name="twitter:title" content="Shitaji.CSS">
     <meta name="twitter:description" content="Webデザイン・Web開発を効率化するためのリセットCSS">
-    <meta name="twitter:image:src" content="https://qrac.github.io/shitajicss/demo/ogp.png">
-    <link rel="apple-touch-icon" href="demo/apple-touch-icon.png">
-    <link rel="shortcut icon" href="demo/favicon.ico">
+    <meta name="twitter:image:src" content="https://qrac.github.io/shitajicss/img/ogp.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <link rel="stylesheet" href="demo/style.css">
+    <link rel="stylesheet" href="css/shitaji.min.css">
+    <link rel="stylesheet" href="demo/style.min.css">
   </head>
   <body><svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
@@ -43,40 +45,36 @@
 </svg>
 
     <header class="header">
-      <svg class="-svg -svg_logo_ShitajiCSS">
+      <svg class="svg is-logo-ShitajiCSS">
         <use xlink:href="#-svg_logo_ShitajiCSS"></use>
       </svg>
-      <h1 class="-title">Shitaji.CSS</h1>
-      <h2 class="-disc">Optimized "Reset.CSS" for web design.</h2><a href="https://github.com/qrac/shitajicss/" class="-github">
-        <svg class="-svg -svg_github">
+      <h1 class="title">Shitaji.CSS</h1>
+      <h2 class="disc">Optimized "Reset.CSS" for web design.</h2><a class="github" href="https://github.com/qrac/shitajicss/">
+        <svg class="svg is-github">
           <use xlink:href="#-svg_github"></use>
         </svg><span>GitHub</span></a>
     </header>
     <main class="main">
-      <section class="-section">
-        <pre class="-pre">/*! Reset CSS: Shitaji.CSS v2.0.0 */
+      <section class="section">
+        <pre class="pre">/*! Reset CSS: Shitaji.CSS v3.0.0 CC0 by Qrac */
 * {
   margin: 0;
   padding: 0;
-  border: 0;
   box-sizing: inherit;
-  text-decoration: none;
   font: inherit;
   font-size: 100%;
   font-family: inherit;
   font-weight: inherit;
   font-style: inherit;
-  color: inherit;
   list-style: none;
   vertical-align: baseline;
-  background: transparent;
   background-repeat: no-repeat;
   box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
 
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: inherit;
   text-decoration: inherit;
   vertical-align: inherit;
@@ -119,14 +117,42 @@ video {
   display: inline-block;
 }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-template,
-[hidden] {
-  display: none;
+svg {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img {
+  border-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
 }
 
 hr {
@@ -139,96 +165,21 @@ table {
   border-spacing: 0;
 }
 
+template,
+[hidden] {
+  display: none;
+}
+
 abbr[title] {
   border-bottom: 1px dotted;
   text-decoration: none;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-svg {
-  fill: currentColor;
-}
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
 a {
-  -webkit-text-decoration-skip: objects;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
-}
-
-::-webkit-search-cancel-button,
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-input-placeholder {
+  background: transparent;
   color: inherit;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-}
-
-[aria-busy="true"] {
-  cursor: progress;
-}
-
-[aria-controls] {
-  cursor: pointer;
-}
-
-[aria-disabled] {
-  cursor: default;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
 }
 
 a,
@@ -243,6 +194,68 @@ textarea,
   touch-action: manipulation;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button:not([disabled]),
+input:not([disabled])[type="file"],
+input:not([disabled])[type="color"],
+input:not([disabled])[type="range"],
+input:not([disabled])[type="button"],
+input:not([disabled])[type="reset"],
+input:not([disabled])[type="submit"],
+select:not([disabled]) {
+  cursor: pointer;
+}
+
+input[disabled][type="image"] {
+  cursor: default;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
 [hidden][aria-hidden="false"] {
   clip: rect(0, 0, 0, 0);
   display: inherit;
@@ -253,28 +266,43 @@ textarea,
   clip: auto;
 }
 
-blockquote,
-q {
-  quotes: none;
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-search-cancel-button,
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
 }
 </pre>
       </section>
-      <section class="-section">
-        <h3 class="-heading">License</h3>
-        <div class="-license">
+      <section class="section">
+        <h3 class="heading">License</h3>
+        <div class="license">
           <p>CC0 1.0 Public Domain / Author:<a href="https://twitter.com/Qrac_jp" target="_blank">Qrac</a></p>
         </div>
       </section>
     </main>
     <footer class="footer"><a href="https://twitter.com/Qrac_jp" target="_blank">
-        <svg class="-svg -svg_twitter">
+        <svg class="svg is-twitter">
           <use xlink:href="#-svg_twitter"></use>
         </svg></a></footer>
   </body>
