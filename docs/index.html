@@ -56,33 +56,23 @@
     </header>
     <main class="main">
       <section class="section">
-        <pre class="pre">/*! Reset CSS: Shitaji.CSS v3.0.0 CC0 by Qrac */
-* {
-  margin: 0;
-  padding: 0;
+        <pre class="pre">/*! Shitaji.CSS v4.0.0 CC0 by Qrac */
+*,
+::before,
+::after {
   box-sizing: inherit;
-  font: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  list-style: none;
-  vertical-align: baseline;
   background-repeat: no-repeat;
-  box-shadow: none;
   -webkit-tap-highlight-color: transparent;
 }
 
 ::before,
 ::after {
-  box-sizing: inherit;
-  text-decoration: inherit;
   vertical-align: inherit;
-  background-repeat: no-repeat;
+  text-decoration: inherit;
 }
 
 html {
-  font-family: sans-serif;
+  cursor: default;
   box-sizing: border-box;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
@@ -90,45 +80,112 @@ html {
 }
 
 body {
+  margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+header,
+footer,
+main,
+section,
 article,
 aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
 nav,
-section,
-summary {
+details,
+menu
+figure,
+figcaption {
   display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
 }
 
-audio,
-canvas,
-iframe,
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+small {
+  font-size: 80%;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ffff00;
+  color: #000000;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+summary {
+  display: list-item;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
 img,
 svg,
+iframe,
+canvas,
+audio,
 video {
   vertical-align: middle;
 }
 
-audio:not([controls]) {
-  display: none;
-  height: 0;
+canvas,
+audio,
+video {
+  display: inline-block;
+}
+
+img {
+  border-style: none;
 }
 
 svg {
@@ -139,59 +196,9 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-img {
-  border-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: none;
-}
-
-hr {
-  height: 0;
-  overflow: visible;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-template,
-[hidden] {
+audio:not([controls]) {
   display: none;
-}
-
-abbr[title] {
-  border-bottom: 1px dotted;
-  text-decoration: none;
-}
-
-a {
-  background: transparent;
-  color: inherit;
-  text-decoration: none;
-  -webkit-text-decoration-skip: objects;
-}
-
-a,
-area,
-button,
-input,
-label,
-select,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
+  height: 0;
 }
 
 button,
@@ -202,11 +209,6 @@ textarea {
   margin: 0;
 }
 
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
 button,
 input {
   overflow: visible;
@@ -215,6 +217,49 @@ input {
 button,
 select {
   text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
 button:not([disabled]),
@@ -232,16 +277,74 @@ input[disabled][type="image"] {
   cursor: default;
 }
 
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+::-webkit-input-placeholder {
+  color: inherit;
 }
 
-[type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+legend {
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+hr {
+  height: 0;
+  box-sizing: content-box;
+  overflow: visible;
+}
+
+template {
+  display: none;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000000;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: #b3d4fc;
+  color: #000000;
+  text-shadow: none;
+}
+
+[hidden] {
+  display: none;
 }
 
 [aria-busy="true"] {
@@ -264,33 +367,6 @@ html [type="button"],
 
 [hidden][aria-hidden="false"]:focus {
   clip: auto;
-}
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-::-webkit-search-cancel-button,
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-input-placeholder {
-  color: inherit;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
 }
 </pre>
       </section>
