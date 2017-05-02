@@ -5,9 +5,12 @@
 *,
 ::before,
 ::after {
+  margin: 0;
   box-sizing: inherit;
   background-repeat: no-repeat;
-  -webkit-tap-highlight-color: transparent;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: inherit;
 }
 
 ::before,
@@ -19,13 +22,14 @@
 html {
   cursor: default;
   box-sizing: border-box;
+  font-family: sans-serif;
   overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +43,7 @@ article,
 aside,
 nav,
 details,
-menu
+menu,
 figure,
 figcaption {
   display: block;
@@ -54,11 +58,6 @@ a {
 
 b,
 strong {
-  font-weight: inherit;
-}
-
-b,
-strong {
   font-weight: bolder;
 }
 
@@ -68,17 +67,18 @@ small {
 
 ol,
 ul {
+  padding: 0;
   list-style: none;
 }
 
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+dfn {
+	font-style: italic;
 }
 
-dfn {
-  font-style: italic;
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
 }
 
 mark {
@@ -102,16 +102,18 @@ sup {
   top: -0.5em;
 }
 
-summary {
-  display: list-item;
-}
-
 pre,
 code,
 kbd,
 samp {
   font-family: monospace, monospace;
   font-size: 1em;
+}
+
+canvas,
+audio,
+video {
+  display: inline-block;
 }
 
 img,
@@ -123,14 +125,8 @@ video {
   vertical-align: middle;
 }
 
-canvas,
-audio,
-video {
-  display: inline-block;
-}
-
 img {
-	border-style: none;
+  border-style: none;
 }
 
 svg {
@@ -144,14 +140,6 @@ svg:not(:root) {
 audio:not([controls]) {
   display: none;
   height: 0;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
 }
 
 button,
@@ -207,21 +195,6 @@ button:-moz-focusring,
   -webkit-appearance: none;
 }
 
-button:not([disabled]),
-input:not([disabled])[type="file"],
-input:not([disabled])[type="color"],
-input:not([disabled])[type="range"],
-input:not([disabled])[type="button"],
-input:not([disabled])[type="reset"],
-input:not([disabled])[type="submit"],
-select:not([disabled]) {
-  cursor: pointer;
-}
-
-input[disabled][type="image"] {
-  cursor: default;
-}
-
 ::-webkit-input-placeholder {
   color: inherit;
 }
@@ -248,6 +221,10 @@ legend {
 progress {
   display: inline-block;
   vertical-align: baseline;
+}
+
+summary {
+  display: list-item;
 }
 
 table {
