@@ -1,5 +1,6 @@
 //----------------------------------------------------
-// Shitaji.CSS / import scss > export css
+// Variable: Split
 //----------------------------------------------------
 
-@import "base/_shitaji";
+$split-grid: 12 !default;
+$split-table: 12 !default;
