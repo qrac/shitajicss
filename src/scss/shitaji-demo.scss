@@ -33,6 +33,12 @@
 }
 
 .main {
+  + .aside {
+    margin-top: 56px;
+  }
+}
+
+.aside {
   + .footer {
     margin-top: 56px;
   }
@@ -192,6 +198,23 @@
   }
   &.is-red:hover {
     color: $deep-orange-200;
+  }
+}
+
+.pre {
+  background-color: $grey-100;
+  border-radius: 2px;
+  color: $indigo-500;
+  > .code {
+    display: block;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 20px 25px;
+    white-space: pre;
+    word-wrap: normal;
+    overflow: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 

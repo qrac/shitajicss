@@ -2,7 +2,7 @@
 
 ## Demo
 
-- [Demo Page](https://qrac.github.io/shitajicss/)
+- [Demo Page][link-demo]
 
 ## About
 
@@ -15,12 +15,24 @@
 - フォーム関連はブラウザデフォルトでも機能させる
 - すべての案件に使えるようCC0で配布
 
-## How To Use
+## Use
 
 ### Download
 
 - そのままCSSファイルを利用：`docs/css/shitaji.min.css`を読み込む
 - SCSSファイルとして利用：`src/scss/_shitaji.scss`を組み込む
+
+### [npm][link-npm]
+
+```
+npm install shitajicss
+```
+
+### [CDN][link-jsdelivr]
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/qrac/shitajicss@4.1.0/docs/css/shitaji.min.css">
+```
 
 ## Support
 
@@ -35,4 +47,9 @@
 ## License
 
 - CC0 1.0 Public Domain
-- Author: [Qrac](https://twitter.com/Qrac_JP)
+- Author: [Qrac][link-twitter]
+
+[link-demo]:https://qrac.github.io/shitajicss/
+[link-npm]:https://www.npmjs.com/package/shitajicss
+[link-jsdelivr]:hhttps://cdn.jsdelivr.net/gh/qrac/shitajicss/
+[link-twitter]:https://twitter.com/Qrac_JP

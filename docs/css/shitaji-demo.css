@@ -14,7 +14,11 @@
   margin-top: 56px;
 }
 
-.main + .footer {
+.main + .aside {
+  margin-top: 56px;
+}
+
+.aside + .footer {
   margin-top: 56px;
 }
 
@@ -216,6 +220,24 @@
 
 .btn.is-ghost.is-red:hover {
   color: #f3bdac;
+}
+
+.pre {
+  background-color: whitesmoke;
+  border-radius: 2px;
+  color: #646d9f;
+}
+
+.pre > .code {
+  display: block;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 20px 25px;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 *.is-xxl {
