@@ -1,0 +1,20 @@
+{
+  "name": "shitajicss",
+  "description": "Resetting CSS for web production",
+  "version": "4.1.0",
+  "style": "docs/css/shitaji.css",
+  "keywords": ["css", "reset", "shitaji", "japanese"],
+  "homepage": "https://github.com/qrac/shitajicss",
+  "bugs": {
+    "url" : "https://github.com/qrac/shitajicss"
+  },
+  "author": {
+    "name": "Qrac",
+    "web": "https://twitter.com/Qrac_JP"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/shitajicss.git"
+  },
+  "license": "(CC0-1.0)"
+}
