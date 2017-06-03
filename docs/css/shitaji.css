@@ -3,7 +3,6 @@
 ::before,
 ::after {
   margin: 0;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
   background-repeat: no-repeat;
   font-size: 1em;
@@ -18,7 +17,6 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
   overflow-y: scroll;
@@ -174,7 +172,6 @@ button:-moz-focusring,
 
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -216,7 +213,6 @@ legend {
   display: table;
   max-width: 100%;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: inherit;
   white-space: normal;
@@ -237,7 +233,6 @@ table {
 
 hr {
   height: 0;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   overflow: visible;
 }
