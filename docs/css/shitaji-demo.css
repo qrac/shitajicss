@@ -29,10 +29,12 @@
 
 .section {
   max-width: 640px;
+  width: calc(100vw - 32px);
   padding: 16px;
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .section + .section {
@@ -97,6 +99,7 @@
 }
 
 .btns {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +119,7 @@
 }
 
 .btns > .btns {
+  display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -126,30 +130,35 @@
 }
 
 .btns.is-middle {
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
 .btns.is-bottom {
+  -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .btns.is-center {
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
 .btns.is-right {
+  -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
 .btns.is-between {
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -172,6 +181,8 @@
   border-radius: 2px;
   line-height: 1;
   text-align: center;
+  -webkit-transition: ease-out 0.15s;
+  -o-transition: ease-out 0.15s;
   transition: ease-out 0.15s;
 }
 
@@ -201,6 +212,7 @@
 }
 
 .btn.is-full {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;

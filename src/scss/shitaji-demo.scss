@@ -51,10 +51,12 @@
 
 .section {
   max-width: 640px;
+  width: calc(100vw - 32px);
   padding: 16px;
   margin: 0 auto;
   background-color: $light;
   border-radius: 8px;
+  overflow: hidden;
   + .section {
     margin-top: 16px;
   }
