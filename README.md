@@ -51,5 +51,5 @@ npm install shitajicss
 
 [link-demo]:https://qrac.github.io/shitajicss/
 [link-npm]:https://www.npmjs.com/package/shitajicss
-[link-jsdelivr]:https://cdn.jsdelivr.net/gh/qrac/shitajicss/
+[link-jsdelivr]:https://cdn.jsdelivr.net/npm/shitajicss/
 [link-twitter]:https://twitter.com/Qrac_JP
