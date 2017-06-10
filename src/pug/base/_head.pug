@@ -5,9 +5,7 @@
 meta(charset="UTF-8")
 title #{page.title} - #{site.title}
 meta(name="description" content=page.desc)
-//-meta(name="robots" content="nofollow")
 meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-//-meta(name="viewport" content="width=1024")
 meta(name="format-detection" content="telephone=no, email=no, address=no")
 meta(http-equiv="x-ua-compatible" content="ie=edge")
 
@@ -21,14 +19,12 @@ meta(property="og:url" content=site.url+"/"+page.url)
 meta(property="og:image" content=site.url+"/"+path.img+"/"+page.ogp)
 meta(property="og:site_name" content=site.title)
 meta(property="og:type" content="website")
-//-meta(property="og:type" content="blog")
 
 //----------------------------------------------------
 //- / Twitter
 //----------------------------------------------------
 
 meta(name="twitter:card" content="summary_large_image")
-//-meta(name="twitter:card" content="summary")
 meta(name="twitter:site" content=twitter.id)
 meta(name="twitter:creator" content=twitter.id)
 meta(name="twitter:title" content=page.title)
@@ -46,34 +42,13 @@ link(rel="shortcut icon" href=path.img+"/favicon.ico")
 //- / CDN - Font Awesome
 //----------------------------------------------------
 
-//-link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
-link(rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css")
+link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
 
 //----------------------------------------------------
 //- / CDN - Google Fonts
 //----------------------------------------------------
 
 link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster")
-
-//----------------------------------------------------
-//- / CDN - Google Fonts + Japanese Early Access
-//----------------------------------------------------
-
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/roundedmplus1c.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/hannari.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/kokoro.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nikukyu.css")
-//-link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/nicomoji.css")
-
-//----------------------------------------------------
-//- / Local - IcoMoon
-//----------------------------------------------------
-
-//-link(rel="stylesheet" href=path.font"/IcoMoon/style.css")
 
 //----------------------------------------------------
 //- / Local - CSS

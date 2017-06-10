@@ -1,0 +1,16 @@
+//----------------------------------------------------
+// Module: Heading
+//----------------------------------------------------
+
+.heading {
+  &.is-title {
+    color: $light;
+    font-size: 2.75em;
+    font-family: "Lobster", sans-serif;
+  }
+  &.is-second {
+    color: $light;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}

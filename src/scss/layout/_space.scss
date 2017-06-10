@@ -1,0 +1,37 @@
+//----------------------------------------------------
+// Layout: Space
+//----------------------------------------------------
+
+.section {
+  + .section {
+    margin-top: 3em;
+  }
+}
+
+.group {
+  + .group {
+    margin-top: 1em;
+  }
+  + .btns {
+    margin-top: 1em;
+  }
+}
+
+.heading {
+  + .group {
+    margin-top: 1em;
+  }
+}
+
+.texts {
+  + .texts {
+    margin-top: 0.5em;
+  }
+  + .btns {
+    margin-top: 1em;
+  }
+}
+
+.fa + .text {
+  margin-left: 0.25em;
+}

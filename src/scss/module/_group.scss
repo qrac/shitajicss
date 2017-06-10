@@ -1,0 +1,14 @@
+//----------------------------------------------------
+// Module: Group
+//----------------------------------------------------
+
+.group.is-white-card {
+  max-width: 640px;
+  width: calc(100vw - 32px);
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $light;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
