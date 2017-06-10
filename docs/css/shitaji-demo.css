@@ -5,44 +5,53 @@
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", Meiryo, sans-serif;
 }
 
-.header {
-  padding: 32px 0 0;
+.section.is-header {
+  padding: 2em 0 0;
   text-align: center;
 }
 
-.header + .main {
-  margin-top: 56px;
-}
-
-.main + .aside {
-  margin-top: 56px;
-}
-
-.aside + .footer {
-  margin-top: 56px;
-}
-
-.footer {
-  padding: 0 0 72px;
+.section.is-footer {
+  padding: 0 0 4.5em;
   text-align: center;
-}
-
-.section {
-  max-width: 640px;
-  width: calc(100vw - 32px);
-  padding: 16px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .section + .section {
-  margin-top: 16px;
+  margin-top: 3em;
 }
 
-.section + .btns {
+.group + .group {
   margin-top: 1em;
+}
+
+.group + .btns {
+  margin-top: 1em;
+}
+
+.heading + .group {
+  margin-top: 1em;
+}
+
+.texts + .texts {
+  margin-top: 0.5em;
+}
+
+.texts + .btns {
+  margin-top: 1em;
+}
+
+.fa + .text {
+  margin-left: 0.25em;
+}
+
+.group.is-white-card {
+  max-width: 640px;
+  width: calc(100vw - 32px);
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-radius: 0.5em;
+  overflow: hidden;
 }
 
 .img.is-icon-shitajicss {
@@ -56,18 +65,10 @@
   font-family: "Lobster", sans-serif;
 }
 
-.heading.is-section {
+.heading.is-second {
   color: #ffffff;
   font-size: 1.5em;
   text-align: center;
-}
-
-.heading + .texts {
-  margin-top: 0.5em;
-}
-
-.heading + .section {
-  margin-top: 1em;
 }
 
 .texts {
@@ -82,20 +83,38 @@
   font-weight: 700;
 }
 
-.texts + .texts {
-  margin-top: 0.5em;
-}
-
-.texts + .btns {
-  margin-top: 1em;
-}
-
 .text.is-link-reverse:hover {
   text-decoration: underline;
 }
 
-.fa + .text {
-  margin-left: 0.25em;
+.pre,
+.code {
+  color: #646d9f;
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Meiryo, monospace, serif;
+}
+
+:not(.pre) > .code {
+  padding: 0.2em 0.5em;
+  background-color: whitesmoke;
+  border-radius: 0.1875em;
+  font-size: 0.875em;
+  word-break: break-all;
+}
+
+.pre {
+  background-color: whitesmoke;
+  border-radius: 0.125em;
+  white-space: pre;
+  word-wrap: normal;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pre > .code {
+  display: block;
+  padding: 1.25em 1.5em;
+  font-size: 0.875em;
 }
 
 .btns {
@@ -109,7 +128,8 @@
   margin-bottom: -0.5em;
 }
 
-.btns:not(.is-bar) > * {
+.btns:not(.is-bar) > .btns,
+.btns:not(.is-bar) > .btn {
   margin-left: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -158,10 +178,14 @@
   align-self: flex-start;
   white-space: nowrap;
   padding: 0.75em 1em;
-  border-radius: 2px;
+  border-radius: 0.1875em;
   line-height: 1;
   text-align: center;
-  transition: ease-out 0.15s;
+  transition: ease-out 0.12s;
+}
+
+.btn[type="button"], .btn[type="reset"], .btn[type="submit"] {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .btn.is-disable, .btn[disabled] {
@@ -177,10 +201,13 @@
   width: 2.5em;
   height: 2.5em;
   padding: 0;
-  border-radius: 999em;
+  border-radius: 1.25em;
 }
 
-.btn.is-circle > * {
+.btn.is-circle > .icon,
+.btn.is-circle > .im,
+.btn.is-circle > .fa,
+.btn.is-circle > .material-icons {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -209,48 +236,30 @@
   color: #f3bdac;
 }
 
-.pre {
-  background-color: whitesmoke;
-  border-radius: 2px;
-  color: #646d9f;
-}
-
-.pre > .code {
-  display: block;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 20px 25px;
-  white-space: pre;
-  word-wrap: normal;
-  overflow: hidden;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-*.is-xxl {
+.is-xxl {
   font-size: 200%;
 }
 
-*.is-xl {
+.is-xl {
   font-size: 150%;
 }
 
-*.is-lg {
+.is-lg {
   font-size: 125%;
 }
 
-*.is-md {
+.is-md {
   font-size: 100%;
 }
 
-*.is-sm {
+.is-sm {
   font-size: 87.5%;
 }
 
-*.is-xs {
+.is-xs {
   font-size: 75%;
 }
 
-*.is-xxs {
+.is-xxs {
   font-size: 62.5%;
 }

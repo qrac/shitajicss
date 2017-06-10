@@ -10,7 +10,7 @@ block vars
 
 block contents
 
-  header.header
+  header.section.is-header
     img.img.is-icon-shitajicss(src=path.img+"/"+"icon-shitajicss.svg" alt="Shitaji.CSS")
     h1.heading.is-title #{page.title}
     h2.texts.is-light #{page.desc}
@@ -28,29 +28,29 @@ block contents
         i.fa.fa-download(aria-hidden="true")
         span.text Download
 
-  main.main
-    h3.heading.is-section Preview
-    section.section
+  main.section.is-main
+    h3.heading.is-second Preview
+    .group.is-white-card
       h1 h1見出し
       h2 h2見出し
       h3 h3見出し
       h4 h4見出し
       h5 h5見出し
       h6 h6見出し
-    section.section
+    .group.is-white-card
       a(href="#") リンク
       | ｜
       b ストロング
       | ｜
       small スモール
-    section.section
+    .group.is-white-card
       ol
         li リスト
         li リスト
       ul
         li リスト
         li リスト
-    section.section
+    .group.is-white-card
       p
         dfn dfnは定義
       p
@@ -71,13 +71,13 @@ block contents
         span A
         sup 2
         span など。
-    section.section
+    .group.is-white-card
       pre
         code.
           pre > code {
             white-space: pre;
           }
-    section.section
+    .group.is-white-card
       form
         fieldset
           legend TEXT
@@ -203,13 +203,13 @@ block contents
         p
           input(type="submit")
           input(type="submit" disabled)
-    section.section
+    .group.is-white-card
       progress
-    section.section
+    .group.is-white-card
       details
         summary サマリー
         p 詳細の文章
-    section.section
+    .group.is-white-card
       table
         thead
           tr
@@ -239,23 +239,23 @@ block contents
             th th
             th th
             th th
-    section.section
+    .group.is-white-card
       p text hr text
       hr
       p text hr text
-    section.section
+    .group.is-white-card
       address address address address address address
 
-  aside.aside
-    h3.heading.is-section CDN
-    section.section
+  aside.section.is-aside
+    h3.heading.is-second CDN
+    .group.is-white-card
       pre.pre
         code.code.
           &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css&quot;&gt;
 
-  footer.footer
-    h3.heading.is-section License
-    section.section
+  footer.section.is-footer
+    h3.heading.is-second License
+    .group.is-white-card
       p
         | #{github.license} / Author:
         a.text.is-link-reverse(href="https://twitter.com/"+twitter.id target="_blank") Qrac

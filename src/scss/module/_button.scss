@@ -1,0 +1,98 @@
+//----------------------------------------------------
+// Module: Button
+//----------------------------------------------------
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(.is-bar) {
+    margin-left: -0.5em;
+    margin-bottom: -0.5em;
+  }
+  &:not(.is-bar) > .btns,
+  &:not(.is-bar) > .btn {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  > .btns {
+    display: inline-flex;
+  }
+  > .btns + .btns {
+    margin-top: 0;
+  }
+  &.is-middle {
+    align-items: center;
+  }
+  &.is-bottom {
+    align-items: flex-end;
+  }
+  &.is-center {
+    justify-content: center;
+  }
+  &.is-right {
+    justify-content: flex-end;
+  }
+  &.is-between {
+    justify-content: space-between;
+  }
+  &.is-around {
+    justify-content: space-around;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  align-self: flex-start;
+  white-space: nowrap;
+  padding: 0.75em 1em;
+  border-radius: 0.1875em;
+  line-height: 1;
+  text-align: center;
+  transition: ease-out 0.12s;
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    color: $dark-2;
+  }
+  &.is-disable,
+  &[disabled] {
+    cursor: default;
+  }
+  &.is-round {
+    border-radius: 999em;
+  }
+  &.is-circle {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0;
+    border-radius: 1.25em;
+  }
+  &.is-circle > .icon,
+  &.is-circle > .im,
+  &.is-circle > .fa,
+  &.is-circle > .material-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &.is-full {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.btn.is-ghost {
+  color: $light;
+  background-color: transparent;
+  border: 1px solid $light;
+  &:hover {
+    color: $dark-1;
+    background-color: $light;
+  }
+  &.is-red:hover {
+    color: $deep-orange-200;
+  }
+}
