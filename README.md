@@ -52,8 +52,10 @@ npm install shitajicss
 
 - CC0 1.0 Public Domain
 - Author: [Qrac][link-twitter]
+- Author Group: [QRANOKO][link-qranoko]
 
 [link-demo]:https://qrac.github.io/shitajicss/
 [link-npm]:https://www.npmjs.com/package/shitajicss
 [link-jsdelivr]:https://cdn.jsdelivr.net/npm/shitajicss/
 [link-twitter]:https://twitter.com/Qrac_JP
+[link-qranoko]:https://qranoko.jp

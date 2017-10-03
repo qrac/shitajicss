@@ -2,12 +2,31 @@
 // Layout: Section
 //----------------------------------------------------
 
+.section > .inner {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+  @include fablet {
+    width: 540px;
+  }
+  @include tablet {
+    width: 720px;
+  }
+  @include desktop {
+    width: 960px;
+  }
+  @include wide {
+    width: 1140px;
+  }
+}
+
 .section.is-header {
   padding: 2em 0 0;
-  text-align: center;
+  //text-align: center;
 }
 
 .section.is-footer {
-  padding: 0 0 4.5em;
-  text-align: center;
+  background-color: $deep-orange-300;
+  padding: 2em 0 2.5em;
+  //text-align: center;
 }

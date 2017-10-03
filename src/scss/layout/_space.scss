@@ -8,27 +8,145 @@
   }
 }
 
-.group {
-  + .group {
+.groups,
+.group,
+.texts,
+.blockquote,
+.pre,
+.btns,
+.list,
+.table,
+.form,
+.fieldset,
+.alert,
+.wysiwyg {
+  + .groups {
+    margin-top: 3em;
+  }
+  + .heading {
+    margin-top: 2em;
+  }
+  + .group,
+  + .texts,
+  + .blockquote,
+  + .pre,
+  + .btns,
+  + .list,
+  + .table,
+  + .form,
+  + .alert,
+  + .wysiwyg {
     margin-top: 1em;
   }
-  + .btns {
-    margin-top: 1em;
+  + .fieldset {
+    margin-top: 1.5em;
+  }
+  + .field {
+    margin-top: 0.5em;
   }
 }
 
 .heading {
-  + .group {
+  + .groups {
+    margin-top: 3em;
+  }
+  + .heading {
     margin-top: 1em;
+  }
+  + .group,
+  + .texts,
+  + .blockquote,
+  + .pre,
+  + .btns,
+  + .list,
+  + .table,
+  + .form,
+  + .alert,
+  + .wysiwyg {
+    margin-top: 1em;
+  }
+  + .fieldset,
+  + .field {
+    margin-top: 0.5em;
   }
 }
 
-.texts {
-  + .texts {
+.field {
+  + .groups {
     margin-top: 0.5em;
   }
-  + .btns {
-    margin-top: 1em;
+  + .heading {
+    margin-top: 0.5em;
+  }
+  + .group,
+  + .texts,
+  + .blockquote,
+  + .pre,
+  + .btns,
+  + .list,
+  + .table,
+  + .form,
+  + .alert,
+  + .wysiwyg {
+    margin-top: 0.5em;
+  }
+  + .field {
+    margin-top: 0.5em;
+  }
+}
+
+.wysiwyg {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+      margin-top: 1em;
+    }
+    + img,
+    + p,
+    + blockquote,
+    + pre,
+    + ul,
+    + ol,
+    + table,
+    + hr {
+      margin-top: 1em;
+    }
+  }
+  img,
+  p,
+  blockquote,
+  pre,
+  ul,
+  ol,
+  table,
+  hr {
+    + h1,
+    + h2,
+    + h3,
+    + h4,
+    + h5,
+    + h6 {
+      margin-top: 2em;
+    }
+    + img,
+    + p,
+    + blockquote,
+    + pre,
+    + ul,
+    + ol,
+    + table,
+    + hr {
+      margin-top: 1em;
+    }
   }
 }
 
