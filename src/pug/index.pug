@@ -10,255 +10,324 @@ block vars
 
 block contents
 
-  header.section.is-header
-    img.img.is-icon-shitajicss(src=path.img+"/"+"icon-shitajicss.svg" alt="Shitaji.CSS")
-    h1.heading.is-title #{page.title}
-    h2.texts.is-light #{page.desc}
-    p.texts.is-light.is-strong
-      | #{github.ver}
-    p.texts.is-light
-      i.fa.fa-github(aria-hidden="true")
-      a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo)
-        span.text Repository
-      | &nbsp;/&nbsp;
-      a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases")
-        span.text Releases
-    .btns.is-center
-      a.btn.is-lg.is-ghost.is-round.is-red(href="css/shitaji.min.css" download="shitaji.min.css")
-        i.fa.fa-download(aria-hidden="true")
-        span.text Download
+  header.section.is-header.is-center
+    .inner
+      img.img.is-icon-shitajicss(src=path.img+"/"+"icon-shitajicss.svg" alt="Shitaji.CSS")
+      h1.heading.is-title #{page.title}
+      h2.texts.is-light #{page.desc}
+      p.texts.is-light.is-strong
+        | #{github.ver}
+      p.texts.is-light
+        i.fa.fa-github(aria-hidden="true")
+        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo)
+          span.text Repository
+        | &nbsp;/&nbsp;
+        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases")
+          span.text Releases
+      .btns.is-center
+        a.btn.is-lg.is-ghost.is-round.is-red(href="css/shitaji.min.css" download="shitaji.min.css")
+          i.fa.fa-download(aria-hidden="true")
+          span.text Download
 
   main.section.is-main
-    h3.heading.is-second Preview
-    .group.is-white-card
-      h1 h1見出し
-      h2 h2見出し
-      h3 h3見出し
-      h4 h4見出し
-      h5 h5見出し
-      h6 h6見出し
-    .group.is-white-card
-      a(href="#") リンク
-      | ｜
-      b ストロング
-      | ｜
-      small スモール
-    .group.is-white-card
-      ol
-        li リスト
-        li リスト
-      ul
-        li リスト
-        li リスト
-    .group.is-white-card
-      p
-        dfn dfnは定義
-      p
-        span abbrは略語と頭字語。
-        abbr(title="Hypertext Markup Language") HTML
-        span という使い方。
-      p
-        span markは
-        mark ハイライト
-        span するときに使用。
-      p
-        span subは下付き文字。
-        span H
-        sub 2
-        span など。
-      p
-        span supは上付き文字。
-        span A
-        sup 2
-        span など。
-    .group.is-white-card
-      pre
-        code.
-          pre > code {
-            white-space: pre;
-          }
-    .group.is-white-card
-      form
-        fieldset
-          legend TEXT
-          input(type="text" placeholder="Text")
-          input(type="text" placeholder="Disabled" disabled)
-          input(type="text" value="Readonly" readonly)
-        fieldset
-          legend SEARCH
-          input(type="search" placeholder="Search")
-          input(type="search" placeholder="Search" disabled)
-        fieldset
-          legend URL
-          input(type="url" placeholder="example.com")
-          input(type="url" placeholder="example.com" disabled)
-        fieldset
-          legend E-MAIL
-          input(type="email" placeholder="example@gmail.com")
-          input(type="email" placeholder="example@gmail.com" disabled)
-        fieldset
-          legend TEL
-          input(type="tel" size="14" maxlength="12" placeholder="000-000-0000")
-          input(type="tel" size="14" maxlength="12" placeholder="000-000-0000" disabled)
-        fieldset
-          legend PASSWORD
-          input(type="password")
-          input(type="password" disabled)
-        fieldset
-          legend DATETIME LOCAL
-          input(type="datetime-local" value="2017-02-02T00:00:00")
-          input(type="datetime-local" value="2017-02-02T00:00:00" disabled)
-        fieldset
-          legend DATE
-          input(type="date" value="2017-02-02")
-          input(type="date" value="2017-02-02" disabled)
-        fieldset
-          legend MONTH
-          input(type="month" value="2017-02")
-          input(type="month" value="2017-02" disabled)
-        //-fieldset
-          legend WEEK
-          input(type="week" value="2017-W05")
-          input(type="week" value="2017-W05" disabled)
-        fieldset
-          legend TIME
-          input(type="time" value="00:00:00")
-          input(type="time" value="00:00:00" disabled)
-        fieldset
-          legend NUMBER
-          input(type="number" step="10")
-          input(type="number" step="10" disabled)
-        fieldset
-          legend FILE
-          input(type="file")
-          input(type="file" disabled)
-        fieldset
-          legend COLOR
-          input(type="color" value="#1cb4c7")
-          input(type="color" value="#1cb4c7" disabled)
-        fieldset
-          legend RANGE
-          input(type="range")
-          input(type="range" disabled)
-        fieldset
-          legend TEXTAREA
-          textarea
-          textarea(disabled)
-        fieldset
-          legend RADIO
-          label
-            input(type="radio" name="radio-default-1" checked)
-            span むすびー
-          label
-            input(type="radio" name="radio-default-1")
-            span むすびい
-          label
-            input(type="radio" name="radio-default-1" disabled)
-            span むすび
-        fieldset
-          legend CHECKBOX
-          label
-            input(type="checkbox" name="checkbox-default-1" checked)
-            span HTML
-          label
-            input(type="checkbox" name="checkbox-default-1")
-            span CSS
-          label
-            input(type="checkbox" name="checkbox-default-1" disabled)
-            span JS
-        fieldset
-          legend SELECT
-          select
-            option Select A
-            option Select B
-            option Select C
-            option Select D
-            option Select E
-          select(disabled)
-            option Select A
-            option Select B
-            option Select C
-            option Select D
-            option Select E
-        fieldset
-          legend SELECT MULTIPLE
-          select(multiple)
-            option Select A
-            option Select B
-            option Select C
-            option Select D
-            option Select E
-          select(multiple disabled)
-            option Select A
-            option Select B
-            option Select C
-            option Select D
-            option Select E
+    .inner
+      h3.heading.is-second Preview
+      .group.is-white-card
+        h1 h1見出し
+        h2 h2見出し
+        h3 h3見出し
+        h4 h4見出し
+        h5 h5見出し
+        h6 h6見出し
+      .group.is-white-card
+        a(href="#") リンク
+        | ｜
+        b ストロング
+        | ｜
+        small スモール
+      .group.is-white-card
+        ol
+          li リスト
+          li リスト
+        ul
+          li リスト
+          li リスト
+      .group.is-white-card
         p
-          input(type="button" value="インプットボタン")
-          input(type="button" value="インプットボタン" disabled)
+          dfn dfnは定義
         p
-          input(type="reset")
-          input(type="reset" disabled)
+          span abbrは略語と頭字語。
+          abbr(title="Hypertext Markup Language") HTML
+          span という使い方。
         p
-          input(type="submit")
-          input(type="submit" disabled)
-    .group.is-white-card
-      progress
-    .group.is-white-card
-      details
-        summary サマリー
-        p 詳細の文章
-    .group.is-white-card
-      table
-        thead
-          tr
-            th th
-            th th
-            th th
-            th th
-        tbody
-          tr
-            td td
-            td td
-            td td
-            td td
-          tr
-            td td
-            td td
-            td td
-            td td
-          tr
-            td td
-            td td
-            td td
-            td td
-        tfoot
-          tr
-            th th
-            th th
-            th th
-            th th
-    .group.is-white-card
-      p text hr text
-      hr
-      p text hr text
-    .group.is-white-card
-      address address address address address address
+          span markは
+          mark ハイライト
+          span するときに使用。
+        p
+          span subは下付き文字。
+          span H
+          sub 2
+          span など。
+        p
+          span supは上付き文字。
+          span A
+          sup 2
+          span など。
+      .group.is-white-card
+        pre
+          code.
+            pre > code {
+              white-space: pre;
+            }
+      .group.is-white-card
+        form
+          fieldset
+            legend TEXT
+            input(type="text" placeholder="Text")
+            input(type="text" placeholder="Disabled" disabled)
+            input(type="text" value="Readonly" readonly)
+          fieldset
+            legend SEARCH
+            input(type="search" placeholder="Search")
+            input(type="search" placeholder="Search" disabled)
+          fieldset
+            legend URL
+            input(type="url" placeholder="example.com")
+            input(type="url" placeholder="example.com" disabled)
+          fieldset
+            legend E-MAIL
+            input(type="email" placeholder="example@gmail.com")
+            input(type="email" placeholder="example@gmail.com" disabled)
+          fieldset
+            legend TEL
+            input(type="tel" size="14" maxlength="12" placeholder="000-000-0000")
+            input(type="tel" size="14" maxlength="12" placeholder="000-000-0000" disabled)
+          fieldset
+            legend PASSWORD
+            input(type="password")
+            input(type="password" disabled)
+          fieldset
+            legend DATETIME LOCAL
+            input(type="datetime-local" value="2017-02-02T00:00:00")
+            input(type="datetime-local" value="2017-02-02T00:00:00" disabled)
+          fieldset
+            legend DATE
+            input(type="date" value="2017-02-02")
+            input(type="date" value="2017-02-02" disabled)
+          fieldset
+            legend MONTH
+            input(type="month" value="2017-02")
+            input(type="month" value="2017-02" disabled)
+          //-fieldset
+            legend WEEK
+            input(type="week" value="2017-W05")
+            input(type="week" value="2017-W05" disabled)
+          fieldset
+            legend TIME
+            input(type="time" value="00:00:00")
+            input(type="time" value="00:00:00" disabled)
+          fieldset
+            legend NUMBER
+            input(type="number" step="10")
+            input(type="number" step="10" disabled)
+          fieldset
+            legend FILE
+            input(type="file")
+            input(type="file" disabled)
+          fieldset
+            legend COLOR
+            input(type="color" value="#1cb4c7")
+            input(type="color" value="#1cb4c7" disabled)
+          fieldset
+            legend RANGE
+            input(type="range")
+            input(type="range" disabled)
+          fieldset
+            legend TEXTAREA
+            textarea
+            textarea(disabled)
+          fieldset
+            legend RADIO
+            label
+              input(type="radio" name="radio-default-1" checked)
+              span むすびー
+            label
+              input(type="radio" name="radio-default-1")
+              span むすびい
+            label
+              input(type="radio" name="radio-default-1" disabled)
+              span むすび
+          fieldset
+            legend CHECKBOX
+            label
+              input(type="checkbox" name="checkbox-default-1" checked)
+              span HTML
+            label
+              input(type="checkbox" name="checkbox-default-1")
+              span CSS
+            label
+              input(type="checkbox" name="checkbox-default-1" disabled)
+              span JS
+          fieldset
+            legend SELECT
+            select
+              option Select A
+              option Select B
+              option Select C
+              option Select D
+              option Select E
+            select(disabled)
+              option Select A
+              option Select B
+              option Select C
+              option Select D
+              option Select E
+          fieldset
+            legend SELECT MULTIPLE
+            select(multiple)
+              option Select A
+              option Select B
+              option Select C
+              option Select D
+              option Select E
+            select(multiple disabled)
+              option Select A
+              option Select B
+              option Select C
+              option Select D
+              option Select E
+          p
+            input(type="button" value="インプットボタン")
+            input(type="button" value="インプットボタン" disabled)
+          p
+            input(type="reset")
+            input(type="reset" disabled)
+          p
+            input(type="submit")
+            input(type="submit" disabled)
+      .group.is-white-card
+        progress
+      .group.is-white-card
+        details
+          summary サマリー
+          p 詳細の文章
+      .group.is-white-card
+        table
+          thead
+            tr
+              th th
+              th th
+              th th
+              th th
+          tbody
+            tr
+              td td
+              td td
+              td td
+              td td
+            tr
+              td td
+              td td
+              td td
+              td td
+            tr
+              td td
+              td td
+              td td
+              td td
+          tfoot
+            tr
+              th th
+              th th
+              th th
+              th th
+      .group.is-white-card
+        p text hr text
+        hr
+        p text hr text
+      .group.is-white-card
+        address address address address address address
 
   aside.section.is-aside
-    h3.heading.is-second CDN
-    .group.is-white-card
-      pre.pre
-        code.code.
-          &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css&quot;&gt;
+    .inner
+      h3.heading.is-second CDN
+      .group.is-white-card
+        pre.pre
+          code.code.
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css&quot;&gt;
+      h3.heading.is-second License
+      .group.is-white-card
+        ul.list.is-circle
+          li.item
+            span #{github.license}
+          li.item
+            span Author:
+            a.text.is-link-reverse(href="https://twitter.com/"+twitter.id) Qrac
+          li.item
+            span Author Group:
+            a.text.is-link-reverse(href="https://qranoko.jp") QRANOKO
 
   footer.section.is-footer
-    h3.heading.is-second License
-    .group.is-white-card
-      p
-        | #{github.license} / Author:
-        a.text.is-link-reverse(href="https://twitter.com/"+twitter.id target="_blank") Qrac
-    .btns.is-center
-      a.btn.is-lg.is-ghost.is-circle.is-red(href="https://twitter.com/"+twitter.id target="_blank")
-        i.fa.fa-twitter(aria-hidden="true")
+    .inner
+      .groups
+        .btns.is-center.is-lg
+          each val in contact
+            a.btn.is-ghost.is-circle(href="" + val.url + "/" + val.id + "")
+              i.fa(aria-hidden="true" class="fa-" + val.class + "")
+      .groups
+        .grid.is-center.is-gap-6x
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading
+              a(href="https://qranoko.jp")
+                img.obj.is-footer-logo(src=path.img+"/logo-qranoko-white.svg" alt=site.title)
+            ul.list.is-light.is-sm
+              li.item
+                span.text Creative Partners
+              li.item
+                span.text Komae, Tokyo, Japan
+            ul.list.is-note.is-light.is-sm
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/about") About
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/works") Works
+              li.item
+                i.icon.fa.fa-hand-o-right(aria-hidden="true")
+                a.text.is-link-reverse(href="https://qranoko.jp/contact") Contact
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light MEMBER
+            ul.list.is-light.is-sm
+              li.item
+                a.text.is-link-reverse(href="https://twitter.com/Qrac_JP") Qrac
+              li.item
+                span.text Mainoko
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PRODUCE
+            ul.list.is-light.is-sm
+              each val in produce
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PRODUCT
+            ul.list.is-light.is-sm
+              each val in product
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light PROJECT
+            ul.list.is-light.is-sm
+              li.item
+                a.text * private
+              //-each val in project
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+          .col.is-mobile-6.is-tablet-3.is-desktop-auto
+            p.heading.is-strong.is-light MORE
+            ul.list.is-light.is-sm
+              each val in more
+                li.item
+                  a.text.is-link-reverse(href=val.url)= val.title
+      .groups
+        p.texts.is-light.is-center.is-sm
+          span.text &copy; QRANOKO 2017

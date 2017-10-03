@@ -27,271 +27,341 @@
     <link rel="stylesheet" href="css/shitaji-demo.min.css">
   </head>
   <body class="shitajicss shitajicss-demo shitajicss-demo-index">
-    <header class="section is-header"><img class="img is-icon-shitajicss" src="img/icon-shitajicss.svg" alt="Shitaji.CSS">
-      <h1 class="heading is-title">Shitaji.CSS</h1>
-      <h2 class="texts is-light">Web制作用の下地リセットCSS</h2>
-      <p class="texts is-light is-strong">v4.3.0</p>
-      <p class="texts is-light"><i class="fa fa-github" aria-hidden="true"></i><a class="text is-link-reverse" href="https://github.com/qrac/shitajicss"><span class="text">Repository</span></a>&nbsp;/&nbsp;<a class="text is-link-reverse" href="https://github.com/qrac/shitajicss/releases"><span class="text">Releases</span></a></p>
-      <div class="btns is-center"><a class="btn is-lg is-ghost is-round is-red" href="css/shitaji.min.css" download="shitaji.min.css"><i class="fa fa-download" aria-hidden="true"></i><span class="text">Download</span></a></div>
+    <header class="section is-header is-center">
+      <div class="inner"><img class="img is-icon-shitajicss" src="img/icon-shitajicss.svg" alt="Shitaji.CSS">
+        <h1 class="heading is-title">Shitaji.CSS</h1>
+        <h2 class="texts is-light">Web制作用の下地リセットCSS</h2>
+        <p class="texts is-light is-strong">v4.3.0</p>
+        <p class="texts is-light"><i class="fa fa-github" aria-hidden="true"></i><a class="text is-link-reverse" href="https://github.com/qrac/shitajicss"><span class="text">Repository</span></a>&nbsp;/&nbsp;<a class="text is-link-reverse" href="https://github.com/qrac/shitajicss/releases"><span class="text">Releases</span></a></p>
+        <div class="btns is-center"><a class="btn is-lg is-ghost is-round is-red" href="css/shitaji.min.css" download="shitaji.min.css"><i class="fa fa-download" aria-hidden="true"></i><span class="text">Download</span></a></div>
+      </div>
     </header>
     <main class="section is-main">
-      <h3 class="heading is-second">Preview</h3>
-      <div class="group is-white-card">
-        <h1>h1見出し</h1>
-        <h2>h2見出し</h2>
-        <h3>h3見出し</h3>
-        <h4>h4見出し</h4>
-        <h5>h5見出し</h5>
-        <h6>h6見出し</h6>
-      </div>
-      <div class="group is-white-card"><a href="#">リンク</a>｜<b>ストロング</b>｜<small>スモール</small></div>
-      <div class="group is-white-card">
-        <ol>
-          <li>リスト</li>
-          <li>リスト</li>
-        </ol>
-        <ul>
-          <li>リスト</li>
-          <li>リスト</li>
-        </ul>
-      </div>
-      <div class="group is-white-card">
-        <p>
-          <dfn>dfnは定義</dfn>
-        </p>
-        <p><span>abbrは略語と頭字語。</span><abbr title="Hypertext Markup Language">HTML</abbr><span>という使い方。</span></p>
-        <p><span>markは</span>
-          <mark>ハイライト</mark><span>するときに使用。</span>
-        </p>
-        <p><span>subは下付き文字。</span><span>H</span><sub>2</sub><span>など。</span></p>
-        <p><span>supは上付き文字。</span><span>A</span><sup>2</sup><span>など。</span></p>
-      </div>
-      <div class="group is-white-card">
-        <pre><code>pre > code {
+      <div class="inner">
+        <h3 class="heading is-second">Preview</h3>
+        <div class="group is-white-card">
+          <h1>h1見出し</h1>
+          <h2>h2見出し</h2>
+          <h3>h3見出し</h3>
+          <h4>h4見出し</h4>
+          <h5>h5見出し</h5>
+          <h6>h6見出し</h6>
+        </div>
+        <div class="group is-white-card"><a href="#">リンク</a>｜<b>ストロング</b>｜<small>スモール</small></div>
+        <div class="group is-white-card">
+          <ol>
+            <li>リスト</li>
+            <li>リスト</li>
+          </ol>
+          <ul>
+            <li>リスト</li>
+            <li>リスト</li>
+          </ul>
+        </div>
+        <div class="group is-white-card">
+          <p>
+            <dfn>dfnは定義</dfn>
+          </p>
+          <p><span>abbrは略語と頭字語。</span><abbr title="Hypertext Markup Language">HTML</abbr><span>という使い方。</span></p>
+          <p><span>markは</span>
+            <mark>ハイライト</mark><span>するときに使用。</span>
+          </p>
+          <p><span>subは下付き文字。</span><span>H</span><sub>2</sub><span>など。</span></p>
+          <p><span>supは上付き文字。</span><span>A</span><sup>2</sup><span>など。</span></p>
+        </div>
+        <div class="group is-white-card">
+          <pre><code>pre > code {
   white-space: pre;
 }</code></pre>
-      </div>
-      <div class="group is-white-card">
-        <form>
-          <fieldset>
-            <legend>TEXT</legend>
-            <input type="text" placeholder="Text">
-            <input type="text" placeholder="Disabled" disabled>
-            <input type="text" value="Readonly" readonly>
-          </fieldset>
-          <fieldset>
-            <legend>SEARCH</legend>
-            <input type="search" placeholder="Search">
-            <input type="search" placeholder="Search" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>URL</legend>
-            <input type="url" placeholder="example.com">
-            <input type="url" placeholder="example.com" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>E-MAIL</legend>
-            <input type="email" placeholder="example@gmail.com">
-            <input type="email" placeholder="example@gmail.com" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>TEL</legend>
-            <input type="tel" size="14" maxlength="12" placeholder="000-000-0000">
-            <input type="tel" size="14" maxlength="12" placeholder="000-000-0000" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>PASSWORD</legend>
-            <input type="password">
-            <input type="password" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>DATETIME LOCAL</legend>
-            <input type="datetime-local" value="2017-02-02T00:00:00">
-            <input type="datetime-local" value="2017-02-02T00:00:00" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>DATE</legend>
-            <input type="date" value="2017-02-02">
-            <input type="date" value="2017-02-02" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>MONTH</legend>
-            <input type="month" value="2017-02">
-            <input type="month" value="2017-02" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>TIME</legend>
-            <input type="time" value="00:00:00">
-            <input type="time" value="00:00:00" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>NUMBER</legend>
-            <input type="number" step="10">
-            <input type="number" step="10" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>FILE</legend>
-            <input type="file">
-            <input type="file" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>COLOR</legend>
-            <input type="color" value="#1cb4c7">
-            <input type="color" value="#1cb4c7" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>RANGE</legend>
-            <input type="range">
-            <input type="range" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>TEXTAREA</legend>
-            <textarea></textarea>
-            <textarea disabled></textarea>
-          </fieldset>
-          <fieldset>
-            <legend>RADIO</legend>
-            <label>
-              <input type="radio" name="radio-default-1" checked><span>むすびー</span>
-            </label>
-            <label>
-              <input type="radio" name="radio-default-1"><span>むすびい</span>
-            </label>
-            <label>
-              <input type="radio" name="radio-default-1" disabled><span>むすび</span>
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>CHECKBOX</legend>
-            <label>
-              <input type="checkbox" name="checkbox-default-1" checked><span>HTML</span>
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox-default-1"><span>CSS</span>
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox-default-1" disabled><span>JS</span>
-            </label>
-          </fieldset>
-          <fieldset>
-            <legend>SELECT</legend>
-            <select>
-              <option>Select A</option>
-              <option>Select B</option>
-              <option>Select C</option>
-              <option>Select D</option>
-              <option>Select E</option>
-            </select>
-            <select disabled>
-              <option>Select A</option>
-              <option>Select B</option>
-              <option>Select C</option>
-              <option>Select D</option>
-              <option>Select E</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>SELECT MULTIPLE</legend>
-            <select multiple>
-              <option>Select A</option>
-              <option>Select B</option>
-              <option>Select C</option>
-              <option>Select D</option>
-              <option>Select E</option>
-            </select>
-            <select multiple disabled>
-              <option>Select A</option>
-              <option>Select B</option>
-              <option>Select C</option>
-              <option>Select D</option>
-              <option>Select E</option>
-            </select>
-          </fieldset>
-          <p>
-            <input type="button" value="インプットボタン">
-            <input type="button" value="インプットボタン" disabled>
-          </p>
-          <p>
-            <input type="reset">
-            <input type="reset" disabled>
-          </p>
-          <p>
-            <input type="submit">
-            <input type="submit" disabled>
-          </p>
-        </form>
-      </div>
-      <div class="group is-white-card">
-        <progress></progress>
-      </div>
-      <div class="group is-white-card">
-        <details>
-          <summary>サマリー</summary>
-          <p>詳細の文章</p>
-        </details>
-      </div>
-      <div class="group is-white-card">
-        <table>
-          <thead>
-            <tr>
-              <th>th</th>
-              <th>th</th>
-              <th>th</th>
-              <th>th</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-            </tr>
-            <tr>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-            </tr>
-            <tr>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-              <td>td</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th>th</th>
-              <th>th</th>
-              <th>th</th>
-              <th>th</th>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
-      <div class="group is-white-card">
-        <p>text hr text</p>
-        <hr>
-        <p>text hr text</p>
-      </div>
-      <div class="group is-white-card">
-        <address>address address address address address</address>
+        </div>
+        <div class="group is-white-card">
+          <form>
+            <fieldset>
+              <legend>TEXT</legend>
+              <input type="text" placeholder="Text">
+              <input type="text" placeholder="Disabled" disabled>
+              <input type="text" value="Readonly" readonly>
+            </fieldset>
+            <fieldset>
+              <legend>SEARCH</legend>
+              <input type="search" placeholder="Search">
+              <input type="search" placeholder="Search" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>URL</legend>
+              <input type="url" placeholder="example.com">
+              <input type="url" placeholder="example.com" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>E-MAIL</legend>
+              <input type="email" placeholder="example@gmail.com">
+              <input type="email" placeholder="example@gmail.com" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>TEL</legend>
+              <input type="tel" size="14" maxlength="12" placeholder="000-000-0000">
+              <input type="tel" size="14" maxlength="12" placeholder="000-000-0000" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>PASSWORD</legend>
+              <input type="password">
+              <input type="password" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>DATETIME LOCAL</legend>
+              <input type="datetime-local" value="2017-02-02T00:00:00">
+              <input type="datetime-local" value="2017-02-02T00:00:00" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>DATE</legend>
+              <input type="date" value="2017-02-02">
+              <input type="date" value="2017-02-02" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>MONTH</legend>
+              <input type="month" value="2017-02">
+              <input type="month" value="2017-02" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>TIME</legend>
+              <input type="time" value="00:00:00">
+              <input type="time" value="00:00:00" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>NUMBER</legend>
+              <input type="number" step="10">
+              <input type="number" step="10" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>FILE</legend>
+              <input type="file">
+              <input type="file" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>COLOR</legend>
+              <input type="color" value="#1cb4c7">
+              <input type="color" value="#1cb4c7" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>RANGE</legend>
+              <input type="range">
+              <input type="range" disabled>
+            </fieldset>
+            <fieldset>
+              <legend>TEXTAREA</legend>
+              <textarea></textarea>
+              <textarea disabled></textarea>
+            </fieldset>
+            <fieldset>
+              <legend>RADIO</legend>
+              <label>
+                <input type="radio" name="radio-default-1" checked><span>むすびー</span>
+              </label>
+              <label>
+                <input type="radio" name="radio-default-1"><span>むすびい</span>
+              </label>
+              <label>
+                <input type="radio" name="radio-default-1" disabled><span>むすび</span>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>CHECKBOX</legend>
+              <label>
+                <input type="checkbox" name="checkbox-default-1" checked><span>HTML</span>
+              </label>
+              <label>
+                <input type="checkbox" name="checkbox-default-1"><span>CSS</span>
+              </label>
+              <label>
+                <input type="checkbox" name="checkbox-default-1" disabled><span>JS</span>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>SELECT</legend>
+              <select>
+                <option>Select A</option>
+                <option>Select B</option>
+                <option>Select C</option>
+                <option>Select D</option>
+                <option>Select E</option>
+              </select>
+              <select disabled>
+                <option>Select A</option>
+                <option>Select B</option>
+                <option>Select C</option>
+                <option>Select D</option>
+                <option>Select E</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>SELECT MULTIPLE</legend>
+              <select multiple>
+                <option>Select A</option>
+                <option>Select B</option>
+                <option>Select C</option>
+                <option>Select D</option>
+                <option>Select E</option>
+              </select>
+              <select multiple disabled>
+                <option>Select A</option>
+                <option>Select B</option>
+                <option>Select C</option>
+                <option>Select D</option>
+                <option>Select E</option>
+              </select>
+            </fieldset>
+            <p>
+              <input type="button" value="インプットボタン">
+              <input type="button" value="インプットボタン" disabled>
+            </p>
+            <p>
+              <input type="reset">
+              <input type="reset" disabled>
+            </p>
+            <p>
+              <input type="submit">
+              <input type="submit" disabled>
+            </p>
+          </form>
+        </div>
+        <div class="group is-white-card">
+          <progress></progress>
+        </div>
+        <div class="group is-white-card">
+          <details>
+            <summary>サマリー</summary>
+            <p>詳細の文章</p>
+          </details>
+        </div>
+        <div class="group is-white-card">
+          <table>
+            <thead>
+              <tr>
+                <th>th</th>
+                <th>th</th>
+                <th>th</th>
+                <th>th</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+              </tr>
+              <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+              </tr>
+              <tr>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+                <td>td</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>th</th>
+                <th>th</th>
+                <th>th</th>
+                <th>th</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="group is-white-card">
+          <p>text hr text</p>
+          <hr>
+          <p>text hr text</p>
+        </div>
+        <div class="group is-white-card">
+          <address>address address address address address</address>
+        </div>
       </div>
     </main>
     <aside class="section is-aside">
-      <h3 class="heading is-second">CDN</h3>
-      <div class="group is-white-card">
-        <pre class="pre"><code class="code">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css&quot;&gt;
-</code></pre>
+      <div class="inner">
+        <h3 class="heading is-second">CDN</h3>
+        <div class="group is-white-card">
+          <pre class="pre"><code class="code">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css&quot;&gt;</code></pre>
+        </div>
+        <h3 class="heading is-second">License</h3>
+        <div class="group is-white-card">
+          <ul class="list is-circle">
+            <li class="item"><span>CC0</span></li>
+            <li class="item"><span>Author:</span><a class="text is-link-reverse" href="https://twitter.com/Qrac_JP">Qrac</a></li>
+            <li class="item"><span>Author Group:</span><a class="text is-link-reverse" href="https://qranoko.jp">QRANOKO</a></li>
+          </ul>
+        </div>
       </div>
     </aside>
     <footer class="section is-footer">
-      <h3 class="heading is-second">License</h3>
-      <div class="group is-white-card">
-        <p>CC0 / Author:<a class="text is-link-reverse" href="https://twitter.com/Qrac_JP" target="_blank">Qrac</a></p>
+      <div class="inner">
+        <div class="groups">
+          <div class="btns is-center is-lg"><a class="btn is-ghost is-circle" href="https://twitter.com/Qrac_JP"><i class="fa fa-twitter" aria-hidden="true"></i></a><a class="btn is-ghost is-circle" href="https://github.com/qrac"><i class="fa fa-github" aria-hidden="true"></i></a><a class="btn is-ghost is-circle" href="https://medium.com/@qrac"><i class="fa fa-medium" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="groups">
+          <div class="grid is-center is-gap-6x">
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading"><a href="https://qranoko.jp"><img class="obj is-footer-logo" src="img/logo-qranoko-white.svg" alt="Qrac GitHub"></a></p>
+              <ul class="list is-light is-sm">
+                <li class="item"><span class="text">Creative Partners</span></li>
+                <li class="item"><span class="text">Komae, Tokyo, Japan</span></li>
+              </ul>
+              <ul class="list is-note is-light is-sm">
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/about">About</a></li>
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/works">Works</a></li>
+                <li class="item"><i class="icon fa fa-hand-o-right" aria-hidden="true"></i><a class="text is-link-reverse" href="https://qranoko.jp/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">MEMBER</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://twitter.com/Qrac_JP">Qrac</a></li>
+                <li class="item"><span class="text">Mainoko</span></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PRODUCE</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://qranoko.jp">QRANOKO</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.jp">Qrac.JP</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PRODUCT</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/musubii/">MUSUBii</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/yakuhanjp/">Yaku Han JP</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/shitajicss/">Shitaji.CSS</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/moftone/">MOFTONE</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/mdtone/">MDTONE</a></li>
+                <li class="item"><a class="text is-link-reverse" href="https://qrac.github.io/iostone/">iOSTONE</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">PROJECT</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text">* private</a></li>
+              </ul>
+            </div>
+            <div class="col is-mobile-6 is-tablet-3 is-desktop-auto">
+              <p class="heading is-strong is-light">MORE</p>
+              <ul class="list is-light is-sm">
+                <li class="item"><a class="text is-link-reverse" href="https://store.line.me/stickershop/product/1121045/ja">LINE STAMP QTA</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="groups">
+          <p class="texts is-light is-center is-sm"><span class="text">&copy; QRANOKO 2017</span></p>
+        </div>
       </div>
-      <div class="btns is-center"><a class="btn is-lg is-ghost is-circle is-red" href="https://twitter.com/Qrac_JP" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
     </footer>
   </body>
 </html>
