@@ -35,7 +35,7 @@ npm install shitajicss
 ### [CDN][link-jsdelivr]
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.3.0/docs/css/shitaji.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.4.0/docs/css/shitaji.min.css">
 ```
 
 ## Support
