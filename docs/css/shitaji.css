@@ -139,6 +139,10 @@ audio:not([controls]) {
   height: 0;
 }
 
+input {
+  border-radius: 0;
+}
+
 button,
 input {
   overflow: visible;
