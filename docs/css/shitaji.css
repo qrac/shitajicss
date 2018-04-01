@@ -1,4 +1,4 @@
-/*! Shitaji.CSS v4.4.0 CC0 by Qrac */
+/*! Shitaji.CSS v4.5.0 CC0 by Qrac */
 
 *,
 ::before,
@@ -79,8 +79,8 @@ abbr[title] {
 }
 
 mark {
-  background-color: #ffff00;
-  color: #000000;
+  background-color: #ff0;
+  color: #000;
 }
 
 sub,
@@ -137,6 +137,10 @@ svg:not(:root) {
 audio:not([controls]) {
   display: none;
   height: 0;
+}
+
+input {
+  border-radius: 0;
 }
 
 button,

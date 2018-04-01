@@ -3,3 +3,4 @@ docs/css/shitaji-demo.css
 docs/css/shitaji-demo.min.css
 docs/index.html
 src/*
+gulpfile.js
