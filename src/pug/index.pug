@@ -11,27 +11,29 @@ block vars
 block contents
 
   header.section.is-header.is-center
-    .inner
-      img.img.is-icon-shitajicss(src=path.img+"/"+"icon-shitajicss.svg" alt="Shitaji.CSS")
-      h1.heading.is-title #{page.title}
-      h2.texts.is-light #{page.desc}
-      p.texts.is-light.is-strong
-        | #{github.ver}
-      p.texts.is-light
-        i.fab.fa-github(aria-hidden="true")
-        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo)
-          span.text Repository
-        | &nbsp;/&nbsp;
-        a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases")
-          span.text Releases
-      .btns.is-center
-        a.btn.is-lg.is-ghost.is-round.is-red(href="css/shitaji.min.css" download="shitaji.min.css")
-          i.fa.fa-cloud-download-alt(aria-hidden="true")
-          span.text Download
+    .inner.is-space
+      .group
+        img.img.is-icon-shitajicss(src=path.img+"/"+"icon-shitajicss.svg" alt="Shitaji.CSS")
+        h1.heading.is-title #{page.title}
+        h2.texts.is-light #{page.desc}
+        p.texts.is-light.is-strong
+          | v#{github.ver}
+        p.texts.is-light
+          i.fab.fa-github(aria-hidden="true")
+          a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo)
+            span.text Repository
+          | &nbsp;/&nbsp;
+          a.text.is-link-reverse(href=github.url+"/"+github.id+"/"+github.repo+"/releases")
+            span.text Releases
+      .group
+        .btns.is-center
+          a.btn.is-lg.is-ghost.is-round.is-red(href="css/shitaji.min.css" download="shitaji.min.css")
+            i.fa.fa-cloud-download-alt(aria-hidden="true")
+            span.text Download
 
   main.section.is-main
-    .inner
-      h3.heading.is-second Preview
+    .inner.is-space
+      h3.heading.is-second.is-montserrat Preview
       .group.is-white-card
         h1 h1見出し
         h2 h2見出し
@@ -249,8 +251,8 @@ block contents
         address address address address address address
 
   aside.section.is-aside
-    .inner
-      h3.heading.is-second CDN
+    .inner.is-space
+      h3.heading.is-second.is-montserrat CDN
       .group.is-white-card
         pre.pre
           code.code.
