@@ -19,8 +19,7 @@
 
 ### Download
 
-- そのままCSSファイルを利用：`docs/css/shitaji.min.css`を読み込む
-- SCSSファイルとして利用：`src/scss/_shitaji.scss`を組み込む
+- `docs/css/shitaji.min.css`を読み込む
 
 ```html
 <link rel="stylesheet" href="css/shitaji.min.css">
@@ -28,8 +27,8 @@
 
 ### [npm][link-npm]
 
-```
-npm install shitajicss
+```bash
+$ npm install shitajicss
 ```
 
 ### [CDN][link-jsdelivr]
