@@ -36,6 +36,8 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9",
-    "jstransformer-markdown-it": "^2.1.0"
+    "jstransformer-markdown-it": "^2.1.0",
+    "moftone": "^6.0.0",
+    "sass-dashi": "^0.2.0"
   }
 }
