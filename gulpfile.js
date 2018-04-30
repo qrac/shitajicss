@@ -13,7 +13,8 @@ const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
-const imagemin = require('gulp-imagemin')
+const imagemin = require('gulp-imagemin');
+const packageImporter = require('node-sass-package-importer');
 
 // Setting : Paths
 const paths = {
@@ -43,14 +44,26 @@ gulp.task('pug', () => {
     .pipe(gulp.dest(paths.out_html));
 });
 
-// Sass > CSS
+// Sass > CSS (shitaji-demo.css)
 gulp.task('scss', () => {
-  return gulp.src(paths.src_scss + '**/*.scss')
+  return gulp.src(paths.src_scss + 'shitaji-demo.scss')
     .pipe(sassGlob())
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(sass(sassOptions))
+    .pipe(sass({
+      importer: packageImporter({
+        extensions: ['.scss', '.css']
+      })
+    }))
     .pipe(autoprefixer(['> 3% in JP', 'ie 11', 'android 4.4', 'last 1 versions']))
     .pipe(gcmq())
+    .pipe(gulp.dest(paths.out_css))
+});
+
+// Sass > CSS (shitaji.css)
+gulp.task('scss_shitaji', () => {
+  return gulp.src(paths.src_scss + 'shitaji.scss')
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(sass(sassOptions))
     .pipe(gulp.dest(paths.out_css))
 });
 
@@ -89,8 +102,8 @@ gulp.task('reload', function (done) {
 // Watch
 gulp.task('watch', () => {
   gulp.watch([paths.src_pug + '**/*.pug', '!' + paths.src_pug + '**/_*.pug'], gulp.series('pug', 'reload'));
+  gulp.watch(paths.src_scss + 'shitaji.scss', gulp.series('scss_shitaji', 'cssmin', 'reload'));
   gulp.watch(paths.src_scss + 'shitaji-demo.scss', gulp.series('scss', 'cssmin', 'reload'));
-  gulp.watch(paths.out_css + 'shitaji.css', gulp.series('cssmin', 'reload'));
   gulp.watch(paths.src_img + '*', gulp.series('imagemin', 'reload'));
 });
 

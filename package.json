@@ -24,7 +24,7 @@
   },
   "license": "CC0-1.0",
   "devDependencies": {
-    "browser-sync": "^2.24.0",
+    "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
@@ -32,12 +32,13 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
-    "gulp-pug": "^4.0.1",
+    "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^3.2.1",
     "gulp-sass-glob": "^1.0.9",
     "jstransformer-markdown-it": "^2.1.0",
     "moftone": "^6.0.0",
+    "node-sass-package-importer": "^5.1.2",
     "sass-dashi": "^0.2.0"
   }
 }
