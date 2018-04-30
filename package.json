@@ -1,7 +1,7 @@
 {
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
-  "version": "4.5.0",
+  "version": "4.5.1",
   "main": "docs/css/shitaji.css",
   "style": "docs/css/shitaji.css",
   "keywords": [
@@ -26,7 +26,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^4.1.0",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^4.1.0",
@@ -35,7 +35,10 @@
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
-    "gulp-sass-glob": "^1.0.8",
-    "jstransformer-markdown-it": "^2.0.0"
+    "gulp-sass-glob": "^1.0.9",
+    "jstransformer-markdown-it": "^2.1.0",
+    "moftone": "^6.0.0",
+    "node-sass-package-importer": "^5.1.2",
+    "sass-dashi": "^0.2.0"
   }
 }
