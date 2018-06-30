@@ -70,18 +70,9 @@ ul {
   list-style: none;
 }
 
-dfn {
-  font-style: italic;
-}
-
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted;
-}
-
-mark {
-  background-color: #ff0;
-  color: #000;
 }
 
 sub,
@@ -155,16 +146,13 @@ select {
 }
 
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -182,8 +170,8 @@ button:-moz-focusring,
   padding: 0;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -192,13 +180,8 @@ button:-moz-focusring,
   outline-offset: -2px;
 }
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-::-webkit-input-placeholder {
-  color: inherit;
 }
 
 ::-webkit-file-upload-button {
@@ -261,13 +244,13 @@ textarea,
 
 ::-moz-selection {
   background-color: #b3d4fc;
-  color: #000000;
+  color: #000;
   text-shadow: none;
 }
 
 ::selection {
   background-color: #b3d4fc;
-  color: #000000;
+  color: #000;
   text-shadow: none;
 }
 
