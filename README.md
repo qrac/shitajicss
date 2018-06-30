@@ -2,7 +2,7 @@
 
 ## Demo
 
-* [Demo Page][link-demo]
+- [Demo Page][link-demo]
 
 ## About
 
@@ -10,16 +10,16 @@
 
 ## Detail
 
-* クロスブラウザのバグフィックスを随時反映（[sanitize.css](https://github.com/10up/sanitize.css)など）
-* 見出しやタップハイライトなどの不要なスタイルを解除
-* フォーム関連はブラウザデフォルトでも機能させる
-* すべての案件に使えるよう CC0 で配布
+- クロスブラウザのバグフィックスを随時反映（[sanitize.css](https://github.com/10up/sanitize.css)など）
+- 見出しやタップハイライトなどの不要なスタイルを解除
+- フォーム関連はブラウザデフォルトでも機能させる
+- すべての案件に使えるよう CC0 で配布
 
 ## Use
 
 ### Download
 
-* `docs/css/shitaji.min.css`を読み込む
+- `docs/css/shitaji.min.css`を読み込む
 
 ```html
 <link rel="stylesheet" href="css/shitaji.min.css">
@@ -34,7 +34,7 @@ $ npm install shitajicss
 ### [CDN][link-jsdelivr]
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.5.1/docs/css/shitaji.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.6.0/docs/css/shitaji.min.css">
 ```
 
 ## Support
@@ -49,9 +49,9 @@ $ npm install shitajicss
 
 ## License
 
-* CC0 1.0 Public Domain
-* Author: [Qrac][link-twitter]
-* Author Group: [QRANOKO][link-qranoko]
+- CC0 1.0 Public Domain
+- Author: [Qrac][link-twitter]
+- Author Group: [QRANOKO][link-qranoko]
 
 [link-demo]: https://qrac.github.io/shitajicss/
 [link-npm]: https://www.npmjs.com/package/shitajicss
