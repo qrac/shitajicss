@@ -118,7 +118,7 @@ img {
   border-style: none;
 }
 
-svg {
+svg:not([fill]) {
   fill: currentColor;
 }
 
