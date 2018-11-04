@@ -26,13 +26,13 @@ https://shitajicss.qranoko.jp
 <link rel="stylesheet" href="css/shitaji.min.css">
 ```
 
-### [npm][https://www.npmjs.com/package/shitajicss]
+### [npm](https://www.npmjs.com/package/shitajicss)
 
 ```bash
 $ npm install shitajicss
 ```
 
-### [CDN][https://cdn.jsdelivr.net/npm/shitajicss/]
+### [CDN](https://cdn.jsdelivr.net/npm/shitajicss/)
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.6.2/docs/css/shitaji.min.css">
