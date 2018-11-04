@@ -152,32 +152,19 @@ button,
   -webkit-appearance: button;
 }
 
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
   padding: 0;
-}
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
 }
 
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
 }
 
 ::-webkit-search-decoration {
@@ -187,6 +174,15 @@ button:-moz-focusring,
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 address {
@@ -202,7 +198,6 @@ legend {
   display: table;
   max-width: 100%;
   padding: 0;
-  box-sizing: border-box;
   color: inherit;
   white-space: normal;
 }
@@ -222,7 +217,6 @@ table {
 
 hr {
   height: 0;
-  box-sizing: content-box;
   overflow: visible;
 }
 
@@ -271,12 +265,8 @@ textarea,
   cursor: not-allowed;
 }
 
-[hidden][aria-hidden="false"] {
+[aria-hidden="false"][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   display: inherit;
   position: absolute;
-}
-
-[hidden][aria-hidden="false"]:focus {
-  clip: auto;
 }
