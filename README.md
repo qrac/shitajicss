@@ -1,8 +1,8 @@
 # Shitaji.CSS
 
-## Demo
+## Site
 
-- [Demo Page][link-demo]
+https://shitajicss.qranoko.jp
 
 ## About
 
@@ -14,8 +14,9 @@
 - 見出しやタップハイライトなどの不要なスタイルを解除
 - フォーム関連はブラウザデフォルトでも機能させる
 - すべての案件に使えるよう CC0 で配布
+- SCSS ファイルとして npm でインポートすることを想定
 
-## Use
+## How To Use
 
 ### Download
 
@@ -25,16 +26,16 @@
 <link rel="stylesheet" href="css/shitaji.min.css">
 ```
 
-### [npm][link-npm]
+### [npm][https://www.npmjs.com/package/shitajicss]
 
 ```bash
 $ npm install shitajicss
 ```
 
-### [CDN][link-jsdelivr]
+### [CDN][https://cdn.jsdelivr.net/npm/shitajicss/]
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.6.0/docs/css/shitaji.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@4.6.2/docs/css/shitaji.min.css">
 ```
 
 ## Support
@@ -47,14 +48,17 @@ $ npm install shitajicss
 | :---------: | :-------------: | :--------------: |
 |   Newest    |     Newest      |       4.4~       |
 
+## Develop
+
+- MacBook Pro: 13-inch 2016 No-touchbar
+- OS: macOS High Sierra 10.13.6
+- Node.js: v10.9.0
+
 ## License
 
 - CC0 1.0 Public Domain
-- Author: [Qrac][link-twitter]
-- Author Group: [QRANOKO][link-qranoko]
 
-[link-demo]: https://qrac.github.io/shitajicss/
-[link-npm]: https://www.npmjs.com/package/shitajicss
-[link-jsdelivr]: https://cdn.jsdelivr.net/npm/shitajicss/
-[link-twitter]: https://twitter.com/Qrac_JP
-[link-qranoko]: https://qranoko.jp
+## Credit
+
+- Author: [Qrac](https://qrac.jp)
+- Organization: [QRANOKO](https://qranoko.jp)
