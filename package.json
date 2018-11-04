@@ -1,7 +1,7 @@
 {
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
-  "version": "4.6.2",
+  "version": "5.0.0",
   "main": "docs/css/shitaji.css",
   "license": "CC0-1.0",
   "homepage": "https://shitajicss.qranoko.jp",
