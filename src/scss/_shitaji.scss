@@ -266,8 +266,9 @@ textarea,
   cursor: pointer;
 }
 
-[aria-disabled] {
-  cursor: default;
+[aria-disabled="true"],
+[disabled] {
+  cursor: not-allowed;
 }
 
 [hidden][aria-hidden="false"] {
