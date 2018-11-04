@@ -1,0 +1,8 @@
+{
+  "setting": {
+    "name": "Shitaji.CSS",
+    "dist": "docs",
+    "src": "src",
+    "banner": true
+  }
+}
