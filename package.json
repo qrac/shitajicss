@@ -1,28 +1,28 @@
 {
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
-  "version": "4.6.0",
+  "version": "4.6.1",
   "main": "docs/css/shitaji.css",
   "style": "docs/css/shitaji.css",
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/qrac/shitajicss",
+  "repository": "https://github.com/qrac/shitajicss",
+  "bugs": "https://github.com/qrac/shitajicss/issues",
   "keywords": [
     "css",
+    "scss",
     "reset",
     "japanese",
     "shitaji"
   ],
-  "homepage": "https://github.com/qrac/shitajicss",
-  "bugs": {
-    "url": "https://github.com/qrac/shitajicss/issues"
-  },
   "author": {
     "name": "Qrac",
-    "web": "https://twitter.com/Qrac_JP"
+    "url": "https://qrac.jp"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/qrac/shitajicss.git"
+  "organization": {
+    "name": "QRANOKO",
+    "url": "https://qranoko.jp"
   },
-  "license": "CC0-1.0",
   "devDependencies": {
     "autoprefixer": "^8.6.4",
     "browser-sync": "2.24.5",
