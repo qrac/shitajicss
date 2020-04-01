@@ -23,7 +23,7 @@ https://shitajicss.qranoko.jp
 - `docs/css/shitaji.min.css`を読み込む
 
 ```html
-<link rel="stylesheet" href="css/shitaji.min.css">
+<link rel="stylesheet" href="css/shitaji.min.css" />
 ```
 
 ### [npm](https://www.npmjs.com/package/shitajicss)
@@ -35,7 +35,10 @@ $ npm install shitajicss
 ### [CDN](https://cdn.jsdelivr.net/npm/shitajicss/)
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@5.0.0/docs/css/shitaji.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/shitajicss@5.1.0/docs/css/shitaji.min.css"
+/>
 ```
 
 ## Support
@@ -47,12 +50,6 @@ $ npm install shitajicss
 | Safari(iOS) | Chrome(Android) | Browser(Android) |
 | :---------: | :-------------: | :--------------: |
 |   Newest    |     Newest      |       4.4~       |
-
-## Develop
-
-- MacBook Pro: 13-inch 2016 No-touchbar
-- OS: macOS High Sierra 10.13.6
-- Node.js: v10.9.0
 
 ## License
 
