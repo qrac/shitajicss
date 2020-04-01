@@ -3,3 +3,7 @@ Thumbs.db
 db.json
 *.log
 node_modules/
+.next
+.temp
+temp
+out

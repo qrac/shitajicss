@@ -1,8 +1,10 @@
 {
-  "setting": {
-    "name": "Shitaji.CSS",
-    "dist": "docs",
-    "src": "src",
-    "banner": true
+  "name": "Shitaji.CSS",
+  "site": {
+    "title": "Shitaji.CSS",
+    "description": "Web制作用の下地リセットCSS",
+    "url": "https://shitajicss.qranoko.jp",
+    "twitter_id": "Qrac_JP",
+    "start_year": "2016"
   }
 }

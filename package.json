@@ -2,7 +2,7 @@
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
   "version": "5.0.0",
-  "main": "docs/css/shitaji.css",
+  "main": "dist/shitaji.css",
   "license": "CC0-1.0",
   "homepage": "https://shitajicss.qranoko.jp",
   "repository": "https://github.com/qrac/shitajicss",
@@ -23,24 +23,21 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "dev": "gulp",
-    "build": "gulp build"
+    "dev": "next",
+    "generate": "next build && next export",
+    "build": "yarn build:sass && yarn build:header && yarn build:cleancss",
+    "build:sass": "bash ./tasks/build-sass.sh",
+    "build:header": "bash ./tasks/build-header.sh",
+    "build:cleancss": "bash ./tasks/build-cleancss.sh",
+    "clean": "rmtrash ./out ./.next ./temp ./src/assets/extracts/.temp"
   },
-  "browserslist": [
-    "> 3% in JP",
-    "ie 11",
-    "android 4.4",
-    "last 1 versions"
-  ],
   "devDependencies": {
-    "browser-sync": "2.26.3",
-    "gulp": "^4.0.0",
-    "gulp-clean-css": "^3.9.3",
-    "gulp-header": "^2.0.5",
-    "gulp-if": "^2.0.2",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1"
+    "clean-css-cli": "^4.3.0",
+    "concat": "^1.0.3",
+    "next": "^9.3.3",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "replace": "^1.1.5"
   }
 }
