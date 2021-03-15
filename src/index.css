@@ -213,18 +213,6 @@ textarea,
   touch-action: manipulation;
 }
 
-::-moz-selection {
-  background-color: #b3d4fc;
-  color: #000;
-  text-shadow: none;
-}
-
-::selection {
-  background-color: #b3d4fc;
-  color: #000;
-  text-shadow: none;
-}
-
 [hidden] {
   display: none;
 }
