@@ -156,10 +156,6 @@ legend {
   white-space: normal;
 }
 
-summary {
-  display: list-item;
-}
-
 table {
   border-collapse: collapse;
 }
