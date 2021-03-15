@@ -33,7 +33,6 @@
   },
   "scripts": {
     "build": "node ./src",
-    "test": "node ./test",
     "prepublishOnly": "npm run build",
     "clean": "trash ./dist"
   },

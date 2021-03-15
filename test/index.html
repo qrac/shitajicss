@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shitaji.CSS Test</title>
+    <link rel="stylesheet" href="../src/index.css" />
+    <style>
+      :root {
+        --theme-tx-1: #292929;
+        --theme-bg-1: #ffffff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --theme-tx-1: #f0f0f0;
+          --theme-bg-1: #282a37;
+        }
+      }
+      body {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 16px;
+        background-color: var(--theme-bg-1);
+        color: var(--theme-tx-1);
+      }
+      main {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <main></main>
+  </body>
+</html>
