@@ -10,7 +10,6 @@ https://shitajicss.qranoko.jp
 
 ## Detail
 
-- クロスブラウザのバグフィックスを随時反映（[sanitize.css](https://github.com/10up/sanitize.css)など）
 - 見出しやタップハイライトなどの不要なスタイルを解除
 - フォーム関連はブラウザデフォルトでも機能させる
 - すべての案件に使えるよう CC0 で配布
