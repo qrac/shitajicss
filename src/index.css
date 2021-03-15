@@ -115,11 +115,6 @@ button,
   -webkit-appearance: button;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  padding: 0;
-}
-
 [type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
