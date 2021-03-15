@@ -20,23 +20,31 @@
       body {
         max-width: 800px;
         margin: 0 auto;
-        padding: 16px;
+        padding: 32px;
         background-color: var(--theme-bg-1);
         color: var(--theme-tx-1);
       }
       main {
         overflow: hidden;
       }
+      .demo-block + .demo-block {
+        margin-top: 32px;
+      }
     </style>
   </head>
   <body>
     <main>
-      <h1>h1見出し</h1>
-      <h2>h2見出し</h2>
-      <h3>h3見出し</h3>
-      <h4>h4見出し</h4>
-      <h5>h5見出し</h5>
-      <h6>h6見出し</h6>
+      <div class="demo-block">
+        <h1>h1見出し</h1>
+        <h2>h2見出し</h2>
+        <h3>h3見出し</h3>
+        <h4>h4見出し</h4>
+        <h5>h5見出し</h5>
+        <h6>h6見出し</h6>
+      </div>
+      <div class="demo-block">
+        <a href="#">リンク</a>｜<b>ストロング</b>｜<small>スモール</small>
+      </div>
     </main>
   </body>
 </html>
