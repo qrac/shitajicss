@@ -24,20 +24,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-header,
-footer,
-main,
-section,
-article,
-aside,
-nav,
-details,
-menu,
-figure,
-figcaption {
-  display: block;
-}
-
 a {
   color: inherit;
   text-decoration: none;
