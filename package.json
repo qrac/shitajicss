@@ -2,14 +2,23 @@
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
   "version": "5.1.0",
+  "cdn": "dist/shitaji.css",
+  "cdn:min": "dist/shitaji.min.css",
   "main": "dist/shitaji.css",
+  "files": [
+    "dist"
+  ],
   "license": "CC0-1.0",
   "homepage": "https://shitajicss.qranoko.jp",
-  "repository": "https://github.com/qrac/shitajicss",
-  "bugs": "https://github.com/qrac/shitajicss/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/shitajicss"
+  },
+  "bugs": {
+    "url": "https://github.com/qrac/shitajicss/issues"
+  },
   "keywords": [
     "css",
-    "scss",
     "reset",
     "japanese",
     "shitaji"
@@ -23,17 +32,15 @@
     "url": "https://qranoko.jp"
   },
   "scripts": {
-    "dev": "next",
-    "generate": "next build && next export",
-    "build": "yarn build:sass && yarn build:header && yarn build:cleancss",
-    "build:sass": "bash ./tasks/build-sass.sh",
-    "build:header": "bash ./tasks/build-header.sh",
-    "build:cleancss": "bash ./tasks/build-cleancss.sh",
-    "clean": "rmtrash ./out ./.next ./temp ./src/assets/extracts/.temp"
+    "build": "node ./src",
+    "test": "node ./test",
+    "prepublishOnly": "npm run build",
+    "clean": "trash ./dist"
+  },
+  "prettier": {
+    "semi": false
   },
   "devDependencies": {
-    "clean-css-cli": "^4.3.0",
-    "concat": "^1.0.3",
-    "replace": "^1.1.5"
+    "clean-css": "^5.1.1"
   }
 }
