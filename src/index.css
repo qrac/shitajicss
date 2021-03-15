@@ -4,7 +4,6 @@
 ::before,
 ::after {
   margin: 0;
-  background-repeat: no-repeat;
   box-sizing: border-box;
   font-size: 1em;
   font-family: inherit;
