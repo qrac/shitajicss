@@ -129,14 +129,6 @@ textarea {
   resize: vertical;
 }
 
-legend {
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  color: inherit;
-  white-space: normal;
-}
-
 table {
   border-collapse: collapse;
 }
