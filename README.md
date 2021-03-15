@@ -30,7 +30,7 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 
 <!-- prettier-ignore -->
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@5.1.0/dist/shitaji.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@6.0.0/dist/shitaji.min.css" />
 ```
 
 ### [npm](https://www.npmjs.com/package/shitajicss)
