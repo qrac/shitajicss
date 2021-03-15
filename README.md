@@ -41,13 +41,9 @@ $ npm install shitajicss
 
 ## Support
 
-| Chrome | Firefox | IE  |  Ege   | Safari(Mac) |
-| :----: | :-----: | :-: | :----: | :---------: |
-| Newest | Newest  | 11~ | Newest |   Newest    |
-
-| Safari(iOS) | Chrome(Android) | Browser(Android) |
-| :---------: | :-------------: | :--------------: |
-|   Newest    |     Newest      |       4.4~       |
+| Chrome | Firefox | Safari |
+| :----: | :-----: | :----: |
+| Newest | Newest  | Newest |
 
 ## License
 
