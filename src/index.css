@@ -53,8 +53,8 @@ small {
 }
 
 abbr[title] {
-  text-decoration: underline;
   text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
 }
 
 sub,
