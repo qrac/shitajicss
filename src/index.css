@@ -94,20 +94,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-input {
-  border-radius: 0;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
 button,
 [type="button"],
 [type="reset"],
@@ -117,7 +103,6 @@ button,
 
 [type="search"] {
   -webkit-appearance: textfield;
-  outline-offset: -2px;
 }
 
 address {
