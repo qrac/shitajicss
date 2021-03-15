@@ -34,10 +34,6 @@
   "devDependencies": {
     "clean-css-cli": "^4.3.0",
     "concat": "^1.0.3",
-    "next": "^9.3.3",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "replace": "^1.1.5"
   }
 }
