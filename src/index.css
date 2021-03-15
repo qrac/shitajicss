@@ -25,12 +25,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 header,
 footer,
 main,
