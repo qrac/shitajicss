@@ -62,21 +62,6 @@ samp {
   font-size: 1em;
 }
 
-canvas,
-audio,
-video {
-  display: inline-block;
-}
-
-img,
-svg,
-iframe,
-canvas,
-audio,
-video {
-  vertical-align: middle;
-}
-
 img {
   border-style: none;
 }
