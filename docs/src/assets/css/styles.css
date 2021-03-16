@@ -1,0 +1,237 @@
+/*----------------------------------------------------
+// HTML
+----------------------------------------------------*/
+
+body {
+  background-color: var(--theme-bg-1);
+  color: var(--theme-tx-1);
+}
+
+/*----------------------------------------------------
+// Hero
+----------------------------------------------------*/
+
+.hero {
+  padding: min(6vmax, 80px) 20px;
+}
+
+.logo {
+  display: block;
+  width: min(30vw, 200px);
+  margin: 0 auto;
+}
+
+.logo path {
+  fill: var(--theme-tx-2);
+}
+
+.logo-text {
+  display: block;
+  width: min(70vw, 386px);
+  margin: min(3vmax, 38px) auto min(1.5vmax, 12px);
+}
+
+.logo-text path {
+  fill: var(--theme-tx-2);
+}
+
+.sub-title {
+  display: block;
+  margin: 0 auto;
+  color: var(--theme-tx-3);
+  font-size: clamp(1.125rem, 4vw, 1.625rem);
+  font-weight: 600;
+  font-family: var(--theme-font-sans);
+  text-align: center;
+}
+
+.repo-note {
+  max-width: 90vw;
+  margin: 0.5rem auto 0;
+  color: var(--theme-tx-3);
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  font-weight: 500;
+  font-family: var(--theme-font-sans);
+  text-align: center;
+}
+
+.repo-note a {
+  color: var(--theme-lk-1);
+  text-decoration: underline;
+}
+
+.repo-note a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------
+// Section
+----------------------------------------------------*/
+
+.section {
+  padding: min(3vmax, 36px) 0;
+}
+
+.section > .inner {
+  max-width: var(--theme-site-width);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.section > .inner > .heading {
+  margin-bottom: min(2vmax, 2rem);
+  color: var(--theme-tx-3);
+  font-size: min(7vw, 2rem);
+  font-weight: 500;
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}
+
+/*----------------------------------------------------
+// Card
+----------------------------------------------------*/
+
+.card {
+  max-width: var(--theme-card-width);
+  margin: 0 auto;
+  padding: min(5vw, 32px);
+  background-color: var(--theme-bg-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card + .card {
+  margin-top: 1rem;
+}
+
+/*----------------------------------------------------
+// Preview
+----------------------------------------------------*/
+
+.preview {
+  position: relative;
+}
+
+.preview-mode-spacer {
+  margin-top: -1.875rem;
+}
+
+.preview-mode {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.preview-mode-buttons {
+  display: flex;
+  padding: 0.375rem 0;
+  background-color: var(--theme-bg-1);
+  border-radius: 0 0 0 0.25rem;
+  color: var(--theme-tx-3);
+  font-size: 0.75rem;
+}
+
+.preview-mode-buttons > * {
+  margin-left: 0.25rem;
+}
+
+.preview-mode-button {
+  padding: 0 0.25rem;
+  background: none;
+  border: none;
+  border-radius: 0.125rem;
+  font-size: 0.75rem;
+  color: inherit;
+}
+
+.preview-mode-button:not(.is-active) {
+  cursor: pointer;
+}
+
+.preview-mode-button:not(.is-active):hover {
+  background: var(--theme-lk-2);
+  color: var(--theme-lk-tx);
+}
+
+.preview-mode-button.is-active {
+  color: var(--theme-lk-1);
+}
+
+/*----------------------------------------------------
+// Preview (Reverse Color)
+----------------------------------------------------*/
+
+.preview-html.is-reverse .card {
+  background-color: var(--theme-reverse-bg-2);
+  color: var(--theme-reverse-tx-1);
+}
+
+/*----------------------------------------------------
+// Markdown
+----------------------------------------------------*/
+
+.markdown > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.markdown h3 {
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+  font-size: min(5vw, 1.5rem);
+  font-weight: 700;
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}
+
+.markdown .shiki,
+.markdown .hljs {
+  padding: 1.25rem 1.5rem;
+  border-radius: 4px;
+  font-family: var(--theme-font-mono);
+  word-break: normal;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: var(--theme-font-sans-en);
+}
+
+.markdown table th {
+  font-weight: 700;
+}
+
+.markdown table th,
+.markdown table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--theme-tx-3);
+  vertical-align: top;
+}
+
+/*----------------------------------------------------
+// Footer
+----------------------------------------------------*/
+
+.footer {
+  padding: 7.5vh 20px;
+}
+
+.footer a {
+  color: var(--theme-lk-1);
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.copylight {
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}

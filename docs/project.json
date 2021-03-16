@@ -1,0 +1,20 @@
+{
+  "name": "Shitaji.CSS Site - Gatsby",
+  "site": {
+    "title": "Shitaji.CSS",
+    "subTitle": "Web制作用の下地リセットCSS",
+    "description": "Shitaji.CSS（シタジシーエスエス）は、Web制作用の下地リセットCSSです。",
+    "shortDescription": "Web制作用の下地リセットCSS",
+    "url": "https://shitajicss.qranoko.jp",
+    "twitter": {
+      "id": "Qrac_JP"
+    },
+    "github": {
+      "url": "https://github.com/qrac/shitajicss"
+    },
+    "copylight": {
+      "name": "QRANOKO",
+      "startYear": "2016"
+    }
+  }
+}

@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="180" src="https://i.gyazo.com/47735fdebf8f2785c633d55c7f84acec.png" alt="Shitaji.CSS Logo">
+</p>
+
 # Shitaji.CSS
 
 <p>
