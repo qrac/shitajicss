@@ -1,7 +1,7 @@
 {
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "cdn": "dist/shitaji.css",
   "cdn:min": "dist/shitaji.min.css",
   "main": "dist/shitaji.css",
