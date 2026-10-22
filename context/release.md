@@ -46,7 +46,11 @@ PR では型チェック、配布 CSS とサイトのビルド、npm 配布内�
 `docs/public/CNAME` に独自ドメインを保持し、`.nojekyll` も成果物へ含めます。
 Firebase の設定・依存・デプロイ処理は使用しません。
 
-### 現在の確認事項
+### Node.js の指定
 
-ワークフローは `node-version-file: .nvmrc` を指定していますが、文書整理時点のリポジトリには `.nvmrc` がありません。
-次回デプロイ前に、Node.js のバージョン指定を実際のファイル構成と揃える必要があります。
+ワークフローの `actions/setup-node` で `node-version: "24"` を直接指定しています。
+`.nvmrc` は使用しません。Node.js の更新時は package.json の engines と開発手順も確認してください。
+
+初回実行 [39742345895](https://github.com/qrac/shitajicss/actions/runs/39742345895) は、
+存在しない `.nvmrc` の参照が原因で、依存インストール・ビルドより前に失敗しました。
+Node.js 24 の直接指定に変更して解消しています。
