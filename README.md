@@ -37,3 +37,12 @@ CSS ファイルを直接指定する場合は `shitajicss/dist/shitaji.css`（�
 | Chrome | Firefox | Safari |
 | :----: | :-----: | :----: |
 | Newest | Newest  | Newest |
+
+## License
+
+- CC0 1.0 Public Domain
+
+## Credit
+
+- Author: [Qrac](https://qrac.jp)
+- Organization: [QRANOKO](https://qranoko.jp)
