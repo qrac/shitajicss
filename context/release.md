@@ -54,3 +54,17 @@ Firebase の設定・依存・デプロイ処理は使用しません。
 初回実行 [39742345895](https://github.com/qrac/shitajicss/actions/runs/39742345895) は、
 存在しない `.nvmrc` の参照が原因で、依存インストール・ビルドより前に失敗しました。
 Node.js 24 の直接指定に変更して解消しています。
+
+### 旧公開方式からの切り替え
+
+実行 [39742688617](https://github.com/qrac/shitajicss/actions/runs/39742688617) では、
+ビルド・成果物アップロード成功後、Pages の公開元が旧 `gh-pages` ブランチ方式だったため
+`Invalid deployment branch ... Deployments are only allowed from gh-pages` で拒否されました。
+リポジトリの Settings → Pages → Source を **GitHub Actions** に変更しています。
+同じエラーが再発した場合は、公開元設定と `github-pages` Environment のブランチ制限を確認します。
+
+公開元変更後、同じ実行の再試行で build・deploy ともに成功しました。
+設定確認時点の公開 URL は `https://qrac.github.io/shitajicss/` で、Pages の Custom domain は未設定です。
+サイトは独自ドメインのルート配信を前提とするため、GitHub 標準の `/shitajicss/` 配下では
+`/assets/...` の CSS が読み込まれません。独自ドメインの設定・DNS 切り替えが別途必要です。
+`docs/public/CNAME` だけでは GitHub Actions 方式の Custom domain 設定は反映されません。
