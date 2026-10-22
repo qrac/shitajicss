@@ -2,11 +2,11 @@
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
   "version": "7.0.0",
-  "cdn": "shitaji.css",
-  "main": "shitaji.css",
+  "cdn": "dist/shitaji.css",
+  "main": "dist/shitaji.css",
   "type": "module",
   "files": [
-    "shitaji.css"
+    "dist"
   ],
   "license": "CC0-1.0",
   "homepage": "https://shitajicss.qranoko.jp",
@@ -28,10 +28,18 @@
     "name": "Qrac",
     "url": "https://qrac.jp"
   },
-  "style": "shitaji.css",
-  "unpkg": "shitaji.css",
-  "jsdelivr": "shitaji.css",
+  "style": "dist/shitaji.css",
+  "unpkg": "dist/shitaji.min.css",
+  "jsdelivr": "dist/shitaji.min.css",
   "sideEffects": [
-    "*.css"
-  ]
+    "**/*.css"
+  ],
+  "cdn:min": "dist/shitaji.min.css",
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
 }

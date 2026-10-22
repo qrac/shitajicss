@@ -26,10 +26,10 @@ jobs:
         run: npm ci
       - name: Check docs types
         run: npm run docs:check
+      - name: Build package and docs
+        run: npm run docs:build
       - name: Check package contents
         run: npm pack --workspace shitajicss --dry-run
-      - name: Build docs
-        run: npm run docs:build
       - uses: actions/upload-pages-artifact@v5
         if: github.event_name != 'pull_request'
         with:

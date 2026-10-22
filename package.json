@@ -11,15 +11,17 @@
     "packages/*"
   ],
   "scripts": {
-    "docs": "minista ./docs",
-    "docs:build": "minista build ./docs",
+    "build": "npm run build -w shitajicss",
+    "docs": "npm run build && minista ./docs",
+    "docs:build": "npm run build && minista build ./docs",
     "docs:preview": "minista preview ./docs",
     "docs:check": "tsc -p docs/tsconfig.json --noEmit",
     "audit": "npx npm-audit-trace",
     "up": "npx npm-check-updates --deep",
     "up:u": "npx npm-check-updates --deep -u",
     "rev": "npx npm-replace-versions",
-    "release": "npm publish -w shitajicss"
+    "release": "npm publish -w shitajicss",
+    "play": "vite ./play/_default"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",

@@ -17,7 +17,7 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@7.0.0/shitaji.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@7.0.0/dist/shitaji.min.css" />
 ```
 
 ### npm
@@ -30,7 +30,8 @@ npm install shitajicss
 import "shitajicss"
 ```
 
-CSS ファイルを直接指定する場合は `shitajicss/shitaji.css` を使用します。
+CSS ファイルを直接指定する場合は `shitajicss/dist/shitaji.css`（通常版）または
+`shitajicss/dist/shitaji.min.css`（圧縮版）を使用します。
 
 ## Support
 
@@ -51,8 +52,8 @@ docs/                 minista サイト
       common/         サイト共通部品
       element/        基本部品
       page/home/      トップページ用部品
-packages/shitajicss/   ビルド不要の配布用 CSS
-test/                 CSS 要素確認用 HTML
+packages/shitajicss/   配布パッケージ（src → dist に通常版・圧縮版を生成）
+play/_default/        CSS 要素確認用 HTML（Vite）
 ```
 
 ### Development
@@ -65,15 +66,20 @@ npm run docs
 ```
 
 ```sh
+npm run build
 npm run docs:check
 npm run docs:build
 npm run docs:preview
 npm pack --workspace shitajicss --dry-run
 ```
 
-配布 CSS は `packages/shitajicss/shitaji.css` を直接編集します。
-CSS の生成・圧縮・ライセンスヘッダー付与は行いません。
-`test/index.html` をブラウザで開くとローカルの配布 CSS を確認できます。
+CSS は `packages/shitajicss/src/index.css` を編集し、`npm run build` で
+`packages/shitajicss/dist/shitaji.css`（通常版）と `shitaji.min.css`（圧縮版）を生成します。
+通常版はソースをそのままコピーし、圧縮版は esbuild の空白圧縮で互換用宣言を保持します。
+ライセンスヘッダーは付与しません。`dist` は生成物として Git 管理から除外します。
+サイトの起動・ビルド時と npm のパック・公開時にも配布 CSS を自動生成します。
+`npm run play` で `play/_default/index.html` を Vite で開き、
+CSS のソースを直接確認できます。CSS を編集すると HMR で反映されます。
 
 ### GitHub Pages
 
@@ -98,7 +104,7 @@ npm run release
 7.0.0 は配布構成を変更する次期版です。npm 公開が完了するまでは上記の
 7.0.0 の CDN URL は利用できません。公開済みの 6.1.0 を利用する場合は
 `https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css` を指定してください。
-7.0.0 では `dist/shitaji.css`・`dist/shitaji.min.css` を廃止し、`shitaji.css` に一本化します。
+7.0.0 でも `dist/shitaji.css`・`dist/shitaji.min.css` の配布パスを維持します。
 `import "shitajicss"` は引き続き利用できます。CSS のルール自体は 6.1.0 と同じです。
 
 ## Site source
