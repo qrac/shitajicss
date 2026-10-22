@@ -4,7 +4,7 @@
 
 ```text
 docs/                         minista の公式サイト
-  public/                     画像、CNAME、.nojekyll
+  public/                     画像
   src/
     layouts/                  共通レイアウト
     components/
@@ -16,6 +16,7 @@ packages/shitajicss/
   scripts/build.mjs           CSS ビルド
   dist/                       通常版・圧縮版の生成先（Git 管理外）
 play/_default/index.html       CSS 要素の確認ページ
+wrangler.jsonc                Cloudflare Workers Static Assets の配信設定
 ```
 
 npm workspaces は `docs` と `packages/*`。ルートは private で、開発ツールを管理します。
@@ -35,6 +36,8 @@ npm ci
 | `npm run docs:check` | サイトの TypeScript 型チェック |
 | `npm run docs:build` | 配布 CSS とサイトをビルド。サイトの出力先は docs/dist |
 | `npm run docs:preview` | ビルド済みサイトをプレビュー |
+| `npm run docs:preview:workers` | 配布 CSS とサイトをビルドし、Wrangler でローカル配信を確認 |
+| `npm run docs:deploy` | 配布 CSS とサイトをビルドし、Cloudflare Workers にデプロイ |
 | `npm pack -w shitajicss --dry-run` | 配布ファイルを確認。prepack による CSS ビルドも実行 |
 
 ## サイトの表示データ
@@ -59,4 +62,5 @@ esbuild はルートの devDependencies で管理します。`minifyWhitespace: 
 - CSS・ビルド変更: `npm run build` と `npm pack -w shitajicss --dry-run`。通常版のソース一致、圧縮版の宣言・順序・互換用指定、配布内容を確認します。
 - CSS の見た目: `npm run play`。フォームなどのブラウザ標準 UI を含めて確認します。
 - サイト変更: `npm run docs:check` と `npm run docs:build`。見た目を変更した場合はプレビューでも確認します。
+- Workers 設定変更: `npm run docs:build` 後に `npx wrangler deploy --dry-run`。`npm run docs:preview:workers` でトップページ・静的ファイル・存在しない URL の 404 応答を確認します。
 - 文書のみの変更: 記述・参照先・`git diff --check` を確認します。サイトの再ビルドは不要です。

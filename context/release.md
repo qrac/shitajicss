@@ -31,40 +31,72 @@ npm pack -w shitajicss --dry-run
 サイトのバージョン表示・CDN サンプルは `shitajicss/package.json` を参照します。
 配布確認後、公開する場合のコマンドは `npm run release`（`npm publish -w shitajicss`）です。
 
-## GitHub Pages
+## Cloudflare Workers
 
-設定は `.github/workflows/docs-gh-pages.yml` にあります。
-PR では型チェック、配布 CSS とサイトのビルド、npm 配布内容の確認を実行します。
-`main` への push または `main` での手動実行で `docs/dist` を GitHub Pages にデプロイします。
+minista が生成する `docs/dist` を Cloudflare Workers Static Assets で配信します。
+配信設定はルートの `wrangler.jsonc`、Wrangler の依存はルートの devDependencies で管理します。
+Worker 名は `shitajicss`。HTML は `auto-trailing-slash`、存在しない URL は
+`404-page` で生成済みの `404.html` を返します。
 
-初回の設定は次のとおりです。
+[Samuraispirits Command](https://github.com/qrac/samuraispirits-command) と同じ
+静的サイト配信方式です。独自の Worker スクリプトは使用しません。
 
-1. リポジトリの Settings → Pages → Build and deployment → Source を **GitHub Actions** に設定。
-2. Custom domain を `shitajicss.qranoko.jp` に設定。
-3. DNS を GitHub Pages に向ける。
+### ローカルでの確認・デプロイ
 
-`docs/public/CNAME` に独自ドメインを保持し、`.nojekyll` も成果物へ含めます。
-Firebase の設定・依存・デプロイ処理は使用しません。
+Node.js 24 以上を使用し、リポジトリのルートから実行します。
 
-### Node.js の指定
+```sh
+npm ci
+npm run docs:check
+npm run docs:preview:workers
+```
 
-ワークフローの `actions/setup-node` で `node-version: "24"` を直接指定しています。
-`.nvmrc` は使用しません。Node.js の更新時は package.json の engines と開発手順も確認してください。
+デプロイ前の設定確認は、サイトのビルド後に行います。
 
-初回実行 [39742345895](https://github.com/qrac/shitajicss/actions/runs/39742345895) は、
-存在しない `.nvmrc` の参照が原因で、依存インストール・ビルドより前に失敗しました。
-Node.js 24 の直接指定に変更して解消しています。
+```sh
+npm run docs:build
+npx wrangler deploy --dry-run
+```
 
-### 旧公開方式からの切り替え
+Cloudflare にログインして手動でデプロイする場合は次を実行します。
 
-実行 [39742688617](https://github.com/qrac/shitajicss/actions/runs/39742688617) では、
-ビルド・成果物アップロード成功後、Pages の公開元が旧 `gh-pages` ブランチ方式だったため
-`Invalid deployment branch ... Deployments are only allowed from gh-pages` で拒否されました。
-リポジトリの Settings → Pages → Source を **GitHub Actions** に変更しています。
-同じエラーが再発した場合は、公開元設定と `github-pages` Environment のブランチ制限を確認します。
+```sh
+npx wrangler login
+npm run docs:deploy
+```
 
-公開元変更後、同じ実行の再試行で build・deploy ともに成功しました。
-設定確認時点の公開 URL は `https://qrac.github.io/shitajicss/` で、Pages の Custom domain は未設定です。
-サイトは独自ドメインのルート配信を前提とするため、GitHub 標準の `/shitajicss/` 配下では
-`/assets/...` の CSS が読み込まれません。独自ドメインの設定・DNS 切り替えが別途必要です。
-`docs/public/CNAME` だけでは GitHub Actions 方式の Custom domain 設定は反映されません。
+### Workers Builds
+
+Cloudflare のダッシュボードで GitHub リポジトリを接続し、以下を設定します。
+
+| 項目 | 値 |
+| --- | --- |
+| Git リポジトリ | `qrac/shitajicss` |
+| Worker 名 | `shitajicss` |
+| 本番ブランチ | `main` |
+| ルートディレクトリ | リポジトリのルート |
+| ビルドコマンド | `npm run docs:check && npm run docs:build && npm pack -w shitajicss --dry-run` |
+| デプロイコマンド | `npx wrangler deploy` |
+| ビルド環境変数 | `NODE_VERSION=24` |
+
+ビルドコマンドで、旧 GitHub Actions と同じ型チェック・CSS とサイトのビルド・npm 配布内容の確認を行います。
+`npm run build` は配布 CSS のみを生成するため、サイトのビルドには `docs:build` を使用します。
+Workers Builds の依存インストールはルートの package-lock.json を使用します。
+ビルドとデプロイのコマンドを分け、デプロイ時の二重ビルドを避けます。
+
+GitHub Actions のワークフローは削除しています。
+Cloudflare の Git 接続前は、push や PR による自動チェック・デプロイは実行されません。
+
+### 独自ドメインの移行
+
+公開ドメインは `shitajicss.qranoko.jp` を継続します。
+
+1. Workers Builds を接続し、Workers の URL でサイトの表示・CSS・404 応答を確認。
+2. Workers の **Settings > Domains & Routes** で `shitajicss.qranoko.jp` を Custom Domain として設定。GitHub Pages 向けの DNS レコードが残っている場合は切り替える。
+3. 独自ドメインで HTTPS 接続と表示を確認してから、GitHub リポジトリの **Settings > Pages** で GitHub Pages の公開を停止。
+
+`docs/public/CNAME` と `.nojekyll` は削除しています。独自ドメインは Cloudflare 側で管理します。
+リポジトリの設定変更だけでは、Git 接続・DNS・独自ドメイン・GitHub Pages の公開停止は反映されません。
+
+設定の詳細は [Workers Builds](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) と
+[Static Assets の SSG 配信](https://developers.cloudflare.com/workers/static-assets/routing/static-site-generation/) を参照してください。

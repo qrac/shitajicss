@@ -6,7 +6,7 @@ Shitaji.CSS は Web 制作用の下地リセット CSS。npm workspaces で配�
 
 - [context/README.md](context/README.md): 開発情報の索引
 - [context/development.md](context/development.md): 構成・コマンド・変更後の確認
-- [context/release.md](context/release.md): npm 公開・GitHub Pages
+- [context/release.md](context/release.md): npm 公開・Cloudflare Workers
 - [context/migration.md](context/migration.md): 構成変更の背景・維持する仕様
 
 ## 作業方針

@@ -30,3 +30,17 @@ minista 5・React 19・Vite 8 の構成に更新しています。具体的な�
 CSS ソースを直接読み込み、HMR で確認できます。
 
 README は利用者向けの短い案内に限定し、AI が作業時に必要とする構成・手順・背景は AGENTS.md と context/ に分けています。
+
+## Cloudflare Workers への移行
+
+2026-10-22、GitHub Pages から Cloudflare Workers Static Assets へ移行するため、
+GitHub Actions の公開ワークフローと `docs/public/CNAME`・`.nojekyll` を削除し、
+ルートに `wrangler.jsonc` と Wrangler の開発依存を追加しました。
+[Samuraispirits Command](https://github.com/qrac/samuraispirits-command) の設定を基に、
+生成済み HTML と `404.html` を配信します。出力先は従来どおり `docs/dist` です。
+
+移行前の同日には、GitHub Pages の Custom domain と DNS の設定、
+`https://shitajicss.qranoko.jp/` の HTTPS 接続・CSS・ロゴ・更新後のフッターを確認済みでした。
+当時の Pages の `Enforce HTTPS` は未チェック・利用不可でした。
+この確認は旧公開先に対するもので、Cloudflare の公開確認を表すものではありません。
+Cloudflare 側の初期設定とドメイン切り替え手順は [release.md](release.md) にまとめています。
