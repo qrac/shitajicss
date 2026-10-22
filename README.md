@@ -17,7 +17,7 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@7.0.0/dist/shitaji.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css" />
 ```
 
 ### npm
@@ -101,11 +101,10 @@ npm run release
 ルート・パッケージ両方の README の CDN バージョンを揃えてください。
 サイトのバージョン表示と CDN サンプルはパッケージのバージョンを参照します。
 
-7.0.0 は配布構成を変更する次期版です。npm 公開が完了するまでは上記の
-7.0.0 の CDN URL は利用できません。公開済みの 6.1.0 を利用する場合は
-`https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css` を指定してください。
-7.0.0 でも `dist/shitaji.css`・`dist/shitaji.min.css` の配布パスを維持します。
-`import "shitajicss"` は引き続き利用できます。CSS のルール自体は 6.1.0 と同じです。
+CSS のルールと配布パスは 6.1.0 と同じため、バージョンは 6.1.0 を維持します。
+今回の開発環境・サイト・ビルド設定の更新では npm に再公開しません。
+公開済みの同じバージョンは再公開できないため、今後パッケージを公開し直す際は
+新しいバージョンに更新してください。
 
 ## Site source
 

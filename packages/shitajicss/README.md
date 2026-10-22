@@ -17,7 +17,7 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@7.0.0/dist/shitaji.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css" />
 ```
 
 ### npm

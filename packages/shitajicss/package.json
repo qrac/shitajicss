@@ -1,7 +1,7 @@
 {
   "name": "shitajicss",
   "description": "Resetting CSS for web production",
-  "version": "7.0.0",
+  "version": "6.1.0",
   "cdn": "dist/shitaji.css",
   "main": "dist/shitaji.css",
   "type": "module",
