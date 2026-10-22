@@ -38,8 +38,5 @@
   "scripts": {
     "build": "node ./scripts/build.mjs",
     "prepack": "npm run build"
-  },
-  "devDependencies": {
-    "esbuild": "^0.28.2"
   }
 }
