@@ -37,6 +37,12 @@ npm ci
 | `npm run docs:preview` | ビルド済みサイトをプレビュー |
 | `npm pack -w shitajicss --dry-run` | 配布ファイルを確認。prepack による CSS ビルドも実行 |
 
+## サイトの表示データ
+
+フッターの開始年・名義・リンクは `docs/project.json` の `site.copyright` に
+`since`・`holder`・`url` として保持します。レイアウトから props でフッターへ渡し、
+年号や名義をコンポーネントに直接記述しません。Yaku Han JP と同じデータ構成です。
+
 ## CSS ビルド
 
 `packages/shitajicss/src/index.css` を編集します。

@@ -1,4 +1,5 @@
 export type Props = {
-  name: string
-  url: string
+  copyrightSince: number
+  copyrightHolder: string
+  copyrightUrl: string
 }

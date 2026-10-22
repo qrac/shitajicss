@@ -12,9 +12,10 @@
     "github": {
       "url": "https://github.com/qrac/shitajicss"
     },
-    "credit": {
-      "name": "QRANOKO",
-      "url": "https://qranoko.jp"
+    "copyright": {
+      "since": 2016,
+      "holder": "QRANOKO",
+      "url": "https://qranoko.jp/"
     }
   }
 }

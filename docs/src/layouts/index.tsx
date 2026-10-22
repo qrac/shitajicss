@@ -39,7 +39,11 @@ export default function Layout({
       </head>
       <body className="layout">
         <main>{children}</main>
-        <CommonFooter name={site.credit.name} url={site.credit.url} />
+        <CommonFooter
+          copyrightSince={site.copyright.since}
+          copyrightHolder={site.copyright.holder}
+          copyrightUrl={site.copyright.url}
+        />
       </body>
     </html>
   )
