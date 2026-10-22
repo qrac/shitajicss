@@ -1,7 +1,3 @@
-<p align="center">
-  <img width="180" src="https://i.gyazo.com/47735fdebf8f2785c633d55c7f84acec.png" alt="Shitaji.CSS Logo">
-</p>
-
 # Shitaji.CSS
 
 Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセット CSS です。
@@ -17,7 +13,10 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css"
+/>
 ```
 
 ### npm
