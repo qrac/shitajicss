@@ -1,0 +1,54 @@
+.hero {
+  padding: min(6vmax, 80px) 20px;
+}
+
+.hero .svg-logo-icon {
+  display: block;
+  width: min(30vw, 200px);
+  margin: 0 auto;
+}
+
+.hero .svg-logo-icon path {
+  fill: var(--theme-tx-2);
+}
+
+.hero .svg-logo-text {
+  display: block;
+  width: min(70vw, 386px);
+  margin: min(3vmax, 38px) auto min(1.5vmax, 12px);
+}
+
+.hero .svg-logo-text path {
+  fill: var(--theme-tx-2);
+}
+
+.hero-description {
+  display: block;
+  margin: 0 auto;
+  color: var(--theme-tx-3);
+  font-size: clamp(1.125rem, 4vw, 1.625rem);
+  font-weight: 600;
+  font-family: var(--theme-font-sans);
+  text-align: center;
+}
+
+.hero-note {
+  max-width: 90vw;
+  margin: 0.5rem auto 0;
+  color: var(--theme-tx-3);
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  font-weight: 500;
+  font-family: var(--theme-font-sans);
+  text-align: center;
+}
+
+.hero-note a {
+  color: var(--theme-lk-1);
+  text-decoration: underline;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-note a:hover {
+    text-decoration: none;
+  }
+}

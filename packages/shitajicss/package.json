@@ -1,0 +1,37 @@
+{
+  "name": "shitajicss",
+  "description": "Resetting CSS for web production",
+  "version": "7.0.0",
+  "cdn": "shitaji.css",
+  "main": "shitaji.css",
+  "type": "module",
+  "files": [
+    "shitaji.css"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://shitajicss.qranoko.jp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrac/shitajicss",
+    "directory": "packages/shitajicss"
+  },
+  "bugs": {
+    "url": "https://github.com/qrac/shitajicss/issues"
+  },
+  "keywords": [
+    "css",
+    "reset",
+    "japanese",
+    "shitaji"
+  ],
+  "author": {
+    "name": "Qrac",
+    "url": "https://qrac.jp"
+  },
+  "style": "shitaji.css",
+  "unpkg": "shitaji.css",
+  "jsdelivr": "shitaji.css",
+  "sideEffects": [
+    "*.css"
+  ]
+}

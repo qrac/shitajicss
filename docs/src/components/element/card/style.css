@@ -1,0 +1,11 @@
+.card {
+  margin: 0 auto;
+  padding: min(5vw, 32px);
+  background-color: var(--theme-bg-2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card + .card {
+  margin-top: 1rem;
+}

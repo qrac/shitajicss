@@ -1,0 +1,17 @@
+.layout {
+  min-height: 100vh;
+}
+
+.preview {
+  overflow-wrap: anywhere;
+}
+
+.preview fieldset {
+  min-width: 0;
+}
+
+.preview input,
+.preview select,
+.preview textarea {
+  max-width: 100%;
+}

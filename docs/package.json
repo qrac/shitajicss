@@ -1,0 +1,13 @@
+{
+  "name": "shitajicss-docs",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "shitajicss": "*"
+  },
+  "devDependencies": {
+    "rehype-pretty-code": "^0.14.5",
+    "shiki": "^4.5.0",
+    "remark-gfm": "^4.0.1"
+  }
+}

@@ -1,0 +1,18 @@
+.section {
+  padding: min(3vmax, 36px) 0;
+}
+
+.section-inner {
+  max-width: var(--theme-site-width);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  margin-bottom: min(2vmax, 2rem);
+  color: var(--theme-tx-3);
+  font-size: min(7vw, 2rem);
+  font-weight: 500;
+  font-family: var(--theme-font-sans-en);
+  text-align: center;
+}
