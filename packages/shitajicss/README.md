@@ -1,8 +1,11 @@
-<p align="center">
-  <img width="180" src="https://i.gyazo.com/47735fdebf8f2785c633d55c7f84acec.png" alt="Shitaji.CSS Logo">
-</p>
-
 # Shitaji.CSS
+
+## Site & Documentation
+
+- デモ: https://shitajicss.qranoko.jp
+- npm: https://www.npmjs.com/package/shitajicss
+
+## About
 
 Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセット CSS です。
 
@@ -10,14 +13,15 @@ Shitaji.CSS（シタジシーエスエス）は、Web 制作用の下地リセ�
 - フォーム関連はブラウザデフォルトでも機能させる
 - CC0 1.0 Public Domain で配布。利用時のクレジット表記は不要
 
-[公式サイト](https://shitajicss.qranoko.jp) / [npm](https://www.npmjs.com/package/shitajicss)
-
-## How To Use
+## Setup
 
 ### CDN
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/shitajicss@6.1.0/dist/shitaji.min.css"
+/>
 ```
 
 ### npm
@@ -38,3 +42,12 @@ CSS ファイルを直接指定する場合は `shitajicss/dist/shitaji.css`（�
 | Chrome | Firefox | Safari |
 | :----: | :-----: | :----: |
 | Newest | Newest  | Newest |
+
+## License
+
+- CC0 1.0 Public Domain
+
+## Credit
+
+- Author: [Qrac](https://qrac.jp)
+- Organization: [QRANOKO](https://qranoko.jp)
